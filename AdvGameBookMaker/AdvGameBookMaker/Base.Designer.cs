@@ -42,8 +42,8 @@
 			this.Manager_Editor_SceneName = new System.Windows.Forms.TextBox();
 			this.Manager_Scenes = new System.Windows.Forms.TabPage();
 			this.Data = new System.Windows.Forms.DataGridView();
-			this.Version = new System.Windows.Forms.Label();
 			this.Manager_Scenes_Data_Title = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.Version = new System.Windows.Forms.Label();
 			this.MenuBar.SuspendLayout();
 			this.Manager.SuspendLayout();
 			this.Manager_Editor.SuspendLayout();
@@ -172,15 +172,15 @@
 			this.Data.Name = "Data";
 			this.Data.RowTemplate.Height = 21;
 			// 
-			// Version
-			// 
-			resources.ApplyResources(this.Version, "Version");
-			this.Version.Name = "Version";
-			// 
 			// Manager_Scenes_Data_Title
 			// 
 			resources.ApplyResources(this.Manager_Scenes_Data_Title, "Manager_Scenes_Data_Title");
 			this.Manager_Scenes_Data_Title.Name = "Manager_Scenes_Data_Title";
+			// 
+			// Version
+			// 
+			resources.ApplyResources(this.Version, "Version");
+			this.Version.Name = "Version";
 			// 
 			// Base
 			// 

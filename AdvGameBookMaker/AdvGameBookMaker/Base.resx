@@ -189,183 +189,6 @@
   <data name="Manager.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left, Right</value>
   </data>
-  <data name="&gt;&gt;Manager_Editor_SceneList_L.Name" xml:space="preserve">
-    <value>Manager_Editor_SceneList_L</value>
-  </data>
-  <data name="&gt;&gt;Manager_Editor_SceneList_L.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Manager_Editor_SceneList_L.Parent" xml:space="preserve">
-    <value>Manager_Editor</value>
-  </data>
-  <data name="&gt;&gt;Manager_Editor_SceneList_L.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;Manager_Editor_Choices.Name" xml:space="preserve">
-    <value>Manager_Editor_Choices</value>
-  </data>
-  <data name="&gt;&gt;Manager_Editor_Choices.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Manager_Editor_Choices.Parent" xml:space="preserve">
-    <value>Manager_Editor</value>
-  </data>
-  <data name="&gt;&gt;Manager_Editor_Choices.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;Manager_Editor_SceneList.Name" xml:space="preserve">
-    <value>Manager_Editor_SceneList</value>
-  </data>
-  <data name="&gt;&gt;Manager_Editor_SceneList.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Manager_Editor_SceneList.Parent" xml:space="preserve">
-    <value>Manager_Editor</value>
-  </data>
-  <data name="&gt;&gt;Manager_Editor_SceneList.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;Manager_Editor_SceneContent.Name" xml:space="preserve">
-    <value>Manager_Editor_SceneContent</value>
-  </data>
-  <data name="&gt;&gt;Manager_Editor_SceneContent.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Manager_Editor_SceneContent.Parent" xml:space="preserve">
-    <value>Manager_Editor</value>
-  </data>
-  <data name="&gt;&gt;Manager_Editor_SceneContent.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;Manager_Editor_SceneName_L.Name" xml:space="preserve">
-    <value>Manager_Editor_SceneName_L</value>
-  </data>
-  <data name="&gt;&gt;Manager_Editor_SceneName_L.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Manager_Editor_SceneName_L.Parent" xml:space="preserve">
-    <value>Manager_Editor</value>
-  </data>
-  <data name="&gt;&gt;Manager_Editor_SceneName_L.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;Manager_Editor_SceneName.Name" xml:space="preserve">
-    <value>Manager_Editor_SceneName</value>
-  </data>
-  <data name="&gt;&gt;Manager_Editor_SceneName.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Manager_Editor_SceneName.Parent" xml:space="preserve">
-    <value>Manager_Editor</value>
-  </data>
-  <data name="&gt;&gt;Manager_Editor_SceneName.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="Manager_Editor.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 22</value>
-  </data>
-  <data name="Manager_Editor.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>10, 10, 10, 10</value>
-  </data>
-  <data name="Manager_Editor.Size" type="System.Drawing.Size, System.Drawing">
-    <value>592, 454</value>
-  </data>
-  <data name="Manager_Editor.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="Manager_Editor.Text" xml:space="preserve">
-    <value>Editor</value>
-  </data>
-  <data name="&gt;&gt;Manager_Editor.Name" xml:space="preserve">
-    <value>Manager_Editor</value>
-  </data>
-  <data name="&gt;&gt;Manager_Editor.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Manager_Editor.Parent" xml:space="preserve">
-    <value>Manager</value>
-  </data>
-  <data name="&gt;&gt;Manager_Editor.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="Data.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Bottom, Left, Right</value>
-  </data>
-  <metadata name="Manager_Scenes_Data_Title.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="Manager_Scenes_Data_Title.HeaderText" xml:space="preserve">
-    <value>SceneName</value>
-  </data>
-  <data name="Data.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 9</value>
-  </data>
-  <data name="Data.Size" type="System.Drawing.Size, System.Drawing">
-    <value>575, 437</value>
-  </data>
-  <data name="Data.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;Data.Name" xml:space="preserve">
-    <value>Data</value>
-  </data>
-  <data name="&gt;&gt;Data.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Data.Parent" xml:space="preserve">
-    <value>Manager_Scenes</value>
-  </data>
-  <data name="&gt;&gt;Data.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="Manager_Scenes.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 22</value>
-  </data>
-  <data name="Manager_Scenes.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>5, 5, 5, 5</value>
-  </data>
-  <data name="Manager_Scenes.Size" type="System.Drawing.Size, System.Drawing">
-    <value>592, 454</value>
-  </data>
-  <data name="Manager_Scenes.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="Manager_Scenes.Text" xml:space="preserve">
-    <value>Scenes</value>
-  </data>
-  <data name="&gt;&gt;Manager_Scenes.Name" xml:space="preserve">
-    <value>Manager_Scenes</value>
-  </data>
-  <data name="&gt;&gt;Manager_Scenes.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Manager_Scenes.Parent" xml:space="preserve">
-    <value>Manager</value>
-  </data>
-  <data name="&gt;&gt;Manager_Scenes.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="Manager.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 27</value>
-  </data>
-  <data name="Manager.Size" type="System.Drawing.Size, System.Drawing">
-    <value>600, 480</value>
-  </data>
-  <data name="Manager.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;Manager.Name" xml:space="preserve">
-    <value>Manager</value>
-  </data>
-  <data name="&gt;&gt;Manager.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Manager.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;Manager.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
   <data name="Manager_Editor_SceneList_L.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Right</value>
   </data>
@@ -536,6 +359,129 @@
   </data>
   <data name="&gt;&gt;Manager_Editor_SceneName.ZOrder" xml:space="preserve">
     <value>5</value>
+  </data>
+  <data name="Manager_Editor.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 22</value>
+  </data>
+  <data name="Manager_Editor.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>10, 10, 10, 10</value>
+  </data>
+  <data name="Manager_Editor.Size" type="System.Drawing.Size, System.Drawing">
+    <value>592, 454</value>
+  </data>
+  <data name="Manager_Editor.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="Manager_Editor.Text" xml:space="preserve">
+    <value>Editor</value>
+  </data>
+  <data name="&gt;&gt;Manager_Editor.Name" xml:space="preserve">
+    <value>Manager_Editor</value>
+  </data>
+  <data name="&gt;&gt;Manager_Editor.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Manager_Editor.Parent" xml:space="preserve">
+    <value>Manager</value>
+  </data>
+  <data name="&gt;&gt;Manager_Editor.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;Data.Name" xml:space="preserve">
+    <value>Data</value>
+  </data>
+  <data name="&gt;&gt;Data.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Data.Parent" xml:space="preserve">
+    <value>Manager_Scenes</value>
+  </data>
+  <data name="&gt;&gt;Data.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="Manager_Scenes.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 22</value>
+  </data>
+  <data name="Manager_Scenes.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
+  </data>
+  <data name="Manager_Scenes.Size" type="System.Drawing.Size, System.Drawing">
+    <value>592, 454</value>
+  </data>
+  <data name="Manager_Scenes.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="Manager_Scenes.Text" xml:space="preserve">
+    <value>Scenes</value>
+  </data>
+  <data name="&gt;&gt;Manager_Scenes.Name" xml:space="preserve">
+    <value>Manager_Scenes</value>
+  </data>
+  <data name="&gt;&gt;Manager_Scenes.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Manager_Scenes.Parent" xml:space="preserve">
+    <value>Manager</value>
+  </data>
+  <data name="&gt;&gt;Manager_Scenes.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="Manager.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 27</value>
+  </data>
+  <data name="Manager.Size" type="System.Drawing.Size, System.Drawing">
+    <value>600, 480</value>
+  </data>
+  <data name="Manager.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;Manager.Name" xml:space="preserve">
+    <value>Manager</value>
+  </data>
+  <data name="&gt;&gt;Manager.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Manager.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Manager.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <metadata name="Manager_Scenes_Data_Title.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="Data.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="Data.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 9</value>
+  </data>
+  <data name="Data.Size" type="System.Drawing.Size, System.Drawing">
+    <value>575, 437</value>
+  </data>
+  <data name="Data.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;Data.Name" xml:space="preserve">
+    <value>Data</value>
+  </data>
+  <data name="&gt;&gt;Data.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Data.Parent" xml:space="preserve">
+    <value>Manager_Scenes</value>
+  </data>
+  <data name="&gt;&gt;Data.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="Manager_Scenes_Data_Title.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="Manager_Scenes_Data_Title.HeaderText" xml:space="preserve">
+    <value>SceneName</value>
+  </data>
+  <data name="Version.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
   </data>
   <data name="Version.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
