@@ -159,17 +159,17 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="..\..\..\..\..\..\..\EpubTest\mimetype">
-      <Link>mimetype</Link>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
     <None Include="AdvBookMaker_一時キー.pfx" />
+    <Content Include="container.xml" />
     <Content Include="content.opf.vm">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <SubType>Designer</SubType>
     </Content>
     <Content Include="cover.xhtml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="mimetype">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <None Include="My Project\app.manifest" />
     <None Include="My Project\Application.myapp">
@@ -185,19 +185,14 @@
     <Content Include="SceneXhtml.vm">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="styles_epub_rtl.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="toc.ncx.vm">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="..\..\..\..\..\..\..\EpubTest\OEBPS\styles\styles_epub_rtl.css">
-      <Link>styles_epub_rtl.css</Link>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\..\..\..\..\..\..\temp\mokuji_TOC\META-INF\container.xml">
-      <Link>container.xml</Link>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
     <Content Include="cover.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
