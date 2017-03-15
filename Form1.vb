@@ -6,7 +6,9 @@ Imports System.Text
 Imports System.IO.Compression
 Imports System.IO.Compression.ZipFile
 
+'ひと様に見せるつもりじゃなかったのでソースぐちゃぐちゃだわ。ちょっと整理しますねー♪
 
+'ファイルタイプチェック用（結局使わなかったかも）
 Public Enum FileSystemType
     None = 1
     File
@@ -16,7 +18,7 @@ End Enum
 
 Public Class form1
 
-    '選択枝数(x2)
+    '選択肢数(x2) 選択肢（質問）数ｘ２です （質問と飛び先フォームの数） 
     Private SW_MAXx2 As Integer = 8
 
     Private CSV_FILE_NAME_FULL As String = ""
@@ -31,7 +33,7 @@ Public Class form1
 
 
 
-        '選択枝フォーム自動生成
+        '選択肢フォーム自動生成
         'TextBoxコントロール配列の作成・選択枝ｘ２なので注意
         Me.TextForms = New System.Windows.Forms.TextBox(SW_MAXx2) {}
 
@@ -141,7 +143,7 @@ Public Class form1
 
                     End If
                 Else
-                    If (MsgBox("移動の前のこのシーンを保存しますか？", vbYesNo + vbQuestion) = MsgBoxResult.Yes) Then
+                    If (MsgBox("移動の前にこのシーンを保存しますか？", vbYesNo + vbQuestion) = MsgBoxResult.Yes) Then
                         SetToGrid()
 
                     End If
@@ -190,7 +192,7 @@ Public Class form1
 
 
 
-        'CSVよりインポート
+        'CSVよりインポート http://blog.goo.ne.jp/ashm314/e/464c1063685c727230a13869420e00f1 からイタダキ
         Dim textFile As FileIO.TextFieldParser  ' -- 入力するファイル
         ' --- 入力ファイルを開く
         textFile = New FileIO.TextFieldParser(FN)   ' -- デフォルト encoding は UTF8
@@ -284,7 +286,7 @@ Public Class form1
 
     Private Sub OpenToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles OpenToolStripMenuItem.Click
 
-        'OpenFileDialogクラスのインスタンスを作成
+        'OpenFileDialogクラスのインスタンスを作成 http://dobon.net/vb/dotnet/form/openfiledialog.html 参考
         Dim ofd As New OpenFileDialog()
 
         'はじめのファイル名を指定する
@@ -358,6 +360,7 @@ Public Class form1
     End Sub
 
     Private Sub save_csv(fn As String)
+        'csv出力、http://blog.goo.ne.jp/ashm314/e/e79a8f2bd9c1b6f83df78d303d183f1c 参考
         Dim textFile As IO.StreamWriter ' -- 出力するファイル
         Dim textLine As String  ' -- 書き出す１行
         Dim cellData As String  ' -- セルのデータ
@@ -580,9 +583,11 @@ Public Class form1
 
 
     Private Sub VeloScene(path As String)
+        ' テンプレートエンジン NVelocity　https://codezine.jp/article/detail/373 参考
         Dim SceneFN As String
         Dim Contents As String
 
+        '質問用、配列にしたかったけれど NVelocity が未対応？ （対応してる？）
         Dim q0 As String, q1 As String, q2 As String, q3 As String
         Dim q4 As String, q5 As String, q6 As String, q7 As String
 
@@ -608,7 +613,7 @@ Public Class form1
                 Console.WriteLine(DataGridView1.CurrentCell.Value)
             Next c
 
-
+            'このあたり格好悪いなー。配列で処理し直し予定
             q0 = ""
             q1 = ""
             q2 = ""
@@ -724,7 +729,7 @@ Public Class form1
     End Sub
 
     Private Sub Epub作成ToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles Epub作成ToolStripMenuItem.Click
-        'Epub作成（あれ、Sub以下に漢字はいってるけどいいの？
+        'Epub作成（あれ、Sub以下に漢字はいってるけどいいの？　良いらしい。
         ' MsgBox("Epubいきます")
 
 
@@ -859,6 +864,7 @@ Public Class form1
 
     End Function
 
+    'VBでZipがまともに動かなかったので再帰的にフォルダ内を取得しつつzip化する。 http://dobon.net/vb/dotnet/file/getfiles.html 参考＋Zip部分改造
     ''' <summary>
     ''' 指定されたフォルダ以下にあるすべてのファイルを取得する
     ''' </summary>
@@ -930,6 +936,7 @@ Public Class form1
             'スタイルシートをセット
             ctx.Put("style", "../styles/styles_epub_rtl.css")
 
+            'このあたりユーザーに入力させなきゃ・・・
             'タイトルをセット   
             ctx.Put("title", "ザ・アドベンチャー")
             '著者をセット   
@@ -937,7 +944,7 @@ Public Class form1
             '出版をセット   
             ctx.Put("publisher", "RasenWorks")
 
-            'uuid
+            'uuid：ダミー！ あとで自動生成すること！
             ctx.Put("uuid", "1268e311-af06-411f-bb5f-187be54ccbaa")
 
             'Listセット
