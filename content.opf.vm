@@ -1,0 +1,40 @@
+##━━━━━━━━━━━━━━━━━━━━━━━━━━
+##       テンプレートファイル(content.opf.vm)
+##     Velocity テンプレート言語 (VTL) で記述
+##━━━━━━━━━━━━━━━━━━━━━━━━━━
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://www.idpf.org/2007/opf" version="3.0" xml:lang="ja" unique-identifier="BookId">
+  <metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <dc:identifier id="BookId">urn:uuid:${uuid}</dc:identifier>
+    <dc:language>ja</dc:language>
+    <dc:title>$!title</dc:title>
+    <dc:creator id="creator">$!creator</dc:creator>
+    <dc:publisher>$!publisher</dc:publisher>
+    <dc:date>2017-01-15</dc:date>
+  </metadata>
+  <manifest>
+    <meta name="cover" content="cover-image" />
+    <item href="toc.ncx" id="ncx" media-type="application/x-dtbncx+xml" />
+
+#foreach( $scn in $scenelist )
+    <item href="Text/${scn}.xhtml" id="${scn}.xhtml" media-type="application/xhtml+xml" />
+#end
+
+    <item href="Images/cover.jpg" id="cover-image"  media-type="image/jpeg" />
+    <item href="Text/cover.xhtml" id="cover.xhtml" media-type="application/xhtml+xml" />
+  </manifest>
+  <spine toc="ncx" page-progression-direction="rtl">
+    <itemref idref="cover.xhtml" />
+
+
+#foreach( $scn in $scenelist )
+    <itemref idref="${scn}.xhtml" />
+#end
+  </spine>
+
+  
+  <guide>
+    <reference href="Text/cover.xhtml" title="表紙" type="cover" />
+  </guide>
+</package>
+ 

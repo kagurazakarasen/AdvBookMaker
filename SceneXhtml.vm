@@ -1,0 +1,69 @@
+##━━━━━━━━━━━━━━━━━━━━━━━━━━
+##       テンプレートファイル(SceneXhtml.vm)
+##     Velocity テンプレート言語 (VTL) で記述       
+##━━━━━━━━━━━━━━━━━━━━━━━━━━
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja" xmlns:epub="http://www.idpf.org/2007/ops">
+<head>
+<meta charset="UTF-8"/>
+<link href="${style}" rel="stylesheet" type="text/css" media="all"/>
+  <title> $!title </title>
+</head>
+
+<body class="standard03">
+
+<p>
+<br/><br/>
+</p>
+
+<p>
+$contents
+</p>
+
+<p>
+<br/><br/><br/>
+</p>
+
+-------------------------------
+
+<p>
+<br/><br/><br/>
+</p>
+
+#if ($q0)
+<p>
+<a href="${q1}.xhtml">${q0}</a>
+</p>
+#end
+
+#if ($q2)
+<p>
+<a href="${q3}.xhtml">${q2}</a>
+</p>
+#end
+
+#if ($q4)
+<p>
+<a href="${q5}.xhtml">${q4}</a>
+</p>
+#end
+
+#if ($q6)
+<p>
+<a href="${q7}.xhtml">${q6}</a>
+</p>
+#end
+
+
+<p>
+<br/><br/><br/>
+</p>
+
+-------------------------------
+
+</body>
+</html>
+
+
