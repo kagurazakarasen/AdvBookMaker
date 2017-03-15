@@ -57,55 +57,55 @@
 			// 
 			// MenuBar
 			// 
-			resources.ApplyResources(this.MenuBar, "MenuBar");
 			this.MenuBar.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.MenuBar_File,
             this.MenuBar_Publish});
+			resources.ApplyResources(this.MenuBar, "MenuBar");
 			this.MenuBar.Name = "MenuBar";
 			// 
 			// MenuBar_File
 			// 
-			resources.ApplyResources(this.MenuBar_File, "MenuBar_File");
 			this.MenuBar_File.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.MenuBar_File_New,
             this.MenuBar_File_Open,
             this.MenuBar_File_Save});
 			this.MenuBar_File.Name = "MenuBar_File";
+			resources.ApplyResources(this.MenuBar_File, "MenuBar_File");
 			// 
 			// MenuBar_File_New
 			// 
-			resources.ApplyResources(this.MenuBar_File_New, "MenuBar_File_New");
 			this.MenuBar_File_New.Name = "MenuBar_File_New";
+			resources.ApplyResources(this.MenuBar_File_New, "MenuBar_File_New");
 			// 
 			// MenuBar_File_Open
 			// 
-			resources.ApplyResources(this.MenuBar_File_Open, "MenuBar_File_Open");
 			this.MenuBar_File_Open.Name = "MenuBar_File_Open";
+			resources.ApplyResources(this.MenuBar_File_Open, "MenuBar_File_Open");
 			// 
 			// MenuBar_File_Save
 			// 
-			resources.ApplyResources(this.MenuBar_File_Save, "MenuBar_File_Save");
 			this.MenuBar_File_Save.Name = "MenuBar_File_Save";
+			resources.ApplyResources(this.MenuBar_File_Save, "MenuBar_File_Save");
 			// 
 			// MenuBar_Publish
 			// 
-			resources.ApplyResources(this.MenuBar_Publish, "MenuBar_Publish");
 			this.MenuBar_Publish.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.MenuBar_Publish_HTML,
             this.MenuBar_Publish_ePubFormat});
 			this.MenuBar_Publish.Name = "MenuBar_Publish";
+			resources.ApplyResources(this.MenuBar_Publish, "MenuBar_Publish");
 			// 
 			// MenuBar_Publish_HTML
 			// 
-			resources.ApplyResources(this.MenuBar_Publish_HTML, "MenuBar_Publish_HTML");
 			this.MenuBar_Publish_HTML.Image = global::AdvGameBookMaker.Properties.Resources.MenuBar_Publish_HTMLFormat;
 			this.MenuBar_Publish_HTML.Name = "MenuBar_Publish_HTML";
+			resources.ApplyResources(this.MenuBar_Publish_HTML, "MenuBar_Publish_HTML");
 			// 
 			// MenuBar_Publish_ePubFormat
 			// 
-			resources.ApplyResources(this.MenuBar_Publish_ePubFormat, "MenuBar_Publish_ePubFormat");
 			this.MenuBar_Publish_ePubFormat.Image = global::AdvGameBookMaker.Properties.Resources.MenuBar_Publish_ePubFormat;
 			this.MenuBar_Publish_ePubFormat.Name = "MenuBar_Publish_ePubFormat";
+			resources.ApplyResources(this.MenuBar_Publish_ePubFormat, "MenuBar_Publish_ePubFormat");
 			// 
 			// Manager
 			// 
@@ -117,7 +117,6 @@
 			// 
 			// Manager_Editor
 			// 
-			resources.ApplyResources(this.Manager_Editor, "Manager_Editor");
 			this.Manager_Editor.Controls.Add(this.Manager_Editor_AddScene);
 			this.Manager_Editor.Controls.Add(this.Manager_Editor_SceneList_L);
 			this.Manager_Editor.Controls.Add(this.Manager_Editor_Choices);
@@ -125,6 +124,7 @@
 			this.Manager_Editor.Controls.Add(this.Manager_Editor_SceneContent);
 			this.Manager_Editor.Controls.Add(this.Manager_Editor_SceneName_L);
 			this.Manager_Editor.Controls.Add(this.Manager_Editor_SceneName);
+			resources.ApplyResources(this.Manager_Editor, "Manager_Editor");
 			this.Manager_Editor.Name = "Manager_Editor";
 			this.Manager_Editor.UseVisualStyleBackColor = true;
 			// 
@@ -169,15 +169,15 @@
 			// 
 			// Manager_Scenes
 			// 
-			resources.ApplyResources(this.Manager_Scenes, "Manager_Scenes");
 			this.Manager_Scenes.Controls.Add(this.Data);
+			resources.ApplyResources(this.Manager_Scenes, "Manager_Scenes");
 			this.Manager_Scenes.Name = "Manager_Scenes";
 			this.Manager_Scenes.UseVisualStyleBackColor = true;
 			// 
 			// Data
 			// 
-			resources.ApplyResources(this.Data, "Data");
 			this.Data.AllowUserToOrderColumns = true;
+			resources.ApplyResources(this.Data, "Data");
 			this.Data.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
 			this.Data.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Manager_Scenes_Data_Scene,
