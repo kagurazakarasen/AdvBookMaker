@@ -86,6 +86,7 @@
 			// 
 			this.MenuBar_File_Save.Name = "MenuBar_File_Save";
 			resources.ApplyResources(this.MenuBar_File_Save, "MenuBar_File_Save");
+			this.MenuBar_File_Save.Click += new System.EventHandler(this.MenuBar_File_Save_Click);
 			// 
 			// MenuBar_Publish
 			// 

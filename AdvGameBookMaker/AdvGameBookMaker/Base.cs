@@ -15,7 +15,11 @@ namespace AdvGameBookMaker {
 		}
 
 		private void Manager_Editor_AddScene_Click(object Sender, EventArgs Event) {
-			Console.WriteLine(this.Manager_Editor_SceneContent.Text);
+			
+		}
+
+		private void MenuBar_File_Save_Click(object Sender, EventArgs Error) {
+			
 		}
 	}
 }
