@@ -13,5 +13,9 @@ namespace AdvGameBookMaker {
 		public Base() {
 			InitializeComponent();
 		}
+
+		private void Manager_Editor_AddScene_Click(object Sender, EventArgs Event) {
+			Console.WriteLine(this.Manager_Editor_SceneContent.Text);
+		}
 	}
 }

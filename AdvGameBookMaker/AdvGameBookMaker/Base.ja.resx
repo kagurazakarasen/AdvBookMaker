@@ -1,0 +1,233 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="MenuBar_File_New.Size" type="System.Drawing.Size, System.Drawing">
+    <value>141, 22</value>
+  </data>
+  <data name="MenuBar_File_New.Text" xml:space="preserve">
+    <value>新規作成(&amp;N)</value>
+  </data>
+  <data name="MenuBar_File_Open.Size" type="System.Drawing.Size, System.Drawing">
+    <value>141, 22</value>
+  </data>
+  <data name="MenuBar_File_Open.Text" xml:space="preserve">
+    <value>開く(&amp;O)</value>
+  </data>
+  <data name="MenuBar_File_Save.Size" type="System.Drawing.Size, System.Drawing">
+    <value>141, 22</value>
+  </data>
+  <data name="MenuBar_File_Save.Text" xml:space="preserve">
+    <value>保存(&amp;S)</value>
+  </data>
+  <data name="MenuBar_File.Size" type="System.Drawing.Size, System.Drawing">
+    <value>70, 20</value>
+  </data>
+  <data name="MenuBar_File.Text" xml:space="preserve">
+    <value>ファイル(&amp;F)</value>
+  </data>
+  <data name="MenuBar_Publish_HTML.Size" type="System.Drawing.Size, System.Drawing">
+    <value>184, 22</value>
+  </data>
+  <data name="MenuBar_Publish_HTML.Text" xml:space="preserve">
+    <value>HTML形式で書き出し</value>
+  </data>
+  <data name="MenuBar_Publish_ePubFormat.Size" type="System.Drawing.Size, System.Drawing">
+    <value>184, 22</value>
+  </data>
+  <data name="MenuBar_Publish_ePubFormat.Text" xml:space="preserve">
+    <value>ePub形式で書き出し</value>
+  </data>
+  <data name="MenuBar_Publish.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 20</value>
+  </data>
+  <data name="MenuBar_Publish.Text" xml:space="preserve">
+    <value>配布(&amp;P)</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Manager_Editor_AddScene.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Manager_Editor_AddScene.Text" xml:space="preserve">
+    <value>シーン追加</value>
+  </data>
+  <data name="Manager_Editor_SceneList_L.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Manager_Editor_SceneList_L.Size" type="System.Drawing.Size, System.Drawing">
+    <value>58, 12</value>
+  </data>
+  <data name="Manager_Editor_SceneList_L.Text" xml:space="preserve">
+    <value>登録シーン</value>
+  </data>
+  <data name="Manager_Editor_Choices.Text" xml:space="preserve">
+    <value>選択肢</value>
+  </data>
+  <data name="Manager_Editor_SceneName_L.Size" type="System.Drawing.Size, System.Drawing">
+    <value>34, 12</value>
+  </data>
+  <data name="Manager_Editor_SceneName_L.Text" xml:space="preserve">
+    <value>シーン</value>
+  </data>
+  <data name="Manager_Editor.Text" xml:space="preserve">
+    <value>エディター</value>
+  </data>
+  <data name="Manager_Scenes_Data_Scene.HeaderText" xml:space="preserve">
+    <value>名称</value>
+  </data>
+  <data name="Manager_Scenes_Data_Contents.HeaderText" xml:space="preserve">
+    <value>内容</value>
+  </data>
+  <data name="Manager_Scenes_Data_Choice1.HeaderText" xml:space="preserve">
+    <value>選択肢1</value>
+  </data>
+  <data name="Manager_Scenes_Data_Choice1_Link.HeaderText" xml:space="preserve">
+    <value>リンク1</value>
+  </data>
+  <data name="Manager_Scenes.Text" xml:space="preserve">
+    <value>シーン</value>
+  </data>
+  <data name="Version.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8AAAAAMAAAADMAAAAzAAAAMwAAADMAAAAzAAAAMwAAADMAAAAzAAAAMwAAADMAAAAzAAAAMwAA
+        AC8AAAAAAAAAAEWY0fJDmNL/QJTQ/z6Sz/8+ks7/P5LO/z+Szv8/ks7/P5LO/z+Szv8/ks7/P5LO/z+T
+        z/9BlM7wAAAADkaa0wBEmdL/P5TQ/6v7//+b8///kvH//5Px//+T8f//k/H//5Px//+T8f//k/H//5Px
+        //+m+P//Zbjj/zFwnV9GmtMAQ5jS/0+m2f+O2vX/ou7//4Ll/v+E5f7/hOX+/4Xm/v+F5v7/heb+/4Xm
+        /v+E5v7/luv//4zY9f85hby4RJnSAEKW0f9rvuj/bb3m/7vy//913v3/d978/3je/P973/z/fd/8/33f
+        /P993/z/fN/8/4Dg/f+t8P//TZ3T/wAAAA5AldD/itf1/0Sh2P/d/f//2vr//9v6///e+v//dNz8/3bb
+        +v912vr/dNr6/3Ta+v9y2fr/oej//3y/5v8wb5xePpTQ/6vw//9Endb/NozL/zaMy/82jMv/N4vL/1y+
+        6v9v2fv/atb6/2jV+f9n1Pn/ZtT5/4Le/P+q4Pb/OIW8uT2Sz/+59P//c9v7/2vM8v9szfP/bM7z/23O
+        8/9HnNT/Vrrp/9r4///X9v//1vb//9X2///V9///2/z//z6U0P88ks//wPP//3Ha+/902/v/ddv8/3Xb
+        /P923Pz/c9r6/0Sc1P83jMv/NozL/zWMzP80jcz/OJDO/z2U0P9DmNLrO5LP/8r2//9p1fn/bNX5/2vV
+        +f9p1fn/adX6/2rX+/9o1Pr/Xsfx/17H8v9dyPL/tOP4/z2U0P8/j8ZpRprTADuSz//V9///YNH5/2HQ
+        +P+06/3/2fb//9r4///a+P//2/n//9z6///c+v//3Pv//+D///8+ldD/RZnTM0aa0wA9lND/3Pz//9j3
+        ///Y9///2/r//zWOzf85kc7/OpLP/zqSz/86ks//OpLP/zuSz/89lND/Q5jS10aa0wBGmtMAQ5jSsD2U
+        0P86ks//OpLP/z2U0P9Bl9HSQ5jSAESY0gBEmNIARJjSAESY0gBEmdIARJnTAEWa0wBGmtMARprTAP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A//8AAAADAAAAAQAAAAEAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAQAAAAMAAAP/
+        AAD//wAA//8AAA==
+</value>
+  </data>
+</root>

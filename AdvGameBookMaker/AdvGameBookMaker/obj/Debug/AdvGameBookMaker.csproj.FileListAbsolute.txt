@@ -16,3 +16,6 @@ C:\Users\Genbu Hase\GitHub\AdvBookMaker\AdvGameBookMaker\AdvGameBookMaker\obj\De
 C:\Users\Genbu Hase\GitHub\AdvBookMaker\AdvGameBookMaker\AdvGameBookMaker\obj\Debug\AdvGameBookMaker.csproj.GenerateResource.Cache
 C:\Users\Genbu Hase\GitHub\AdvBookMaker\AdvGameBookMaker\AdvGameBookMaker\obj\Debug\AdvGameBookMaker.exe
 C:\Users\Genbu Hase\GitHub\AdvBookMaker\AdvGameBookMaker\AdvGameBookMaker\obj\Debug\AdvGameBookMaker.pdb
+C:\Users\Genbu Hase\GitHub\AdvBookMaker\AdvGameBookMaker\AdvGameBookMaker\bin\Debug\ja\AdvGameBookMaker.resources.dll
+C:\Users\Genbu Hase\GitHub\AdvBookMaker\AdvGameBookMaker\AdvGameBookMaker\obj\Debug\AdvGameBookMaker.Base.ja.resources
+C:\Users\Genbu Hase\GitHub\AdvBookMaker\AdvGameBookMaker\AdvGameBookMaker\obj\Debug\ja\AdvGameBookMaker.resources.dll
