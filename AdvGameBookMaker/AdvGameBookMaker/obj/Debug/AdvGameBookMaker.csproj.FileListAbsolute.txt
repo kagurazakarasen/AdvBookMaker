@@ -1,0 +1,18 @@
+c:\users\genbu hase\ドキュメント\visual studio 2017\Projects\AdvGameBookMaker\AdvGameBookMaker\bin\Debug\AdvGameBookMaker.exe.config
+c:\users\genbu hase\ドキュメント\visual studio 2017\Projects\AdvGameBookMaker\AdvGameBookMaker\bin\Debug\AdvGameBookMaker.exe
+c:\users\genbu hase\ドキュメント\visual studio 2017\Projects\AdvGameBookMaker\AdvGameBookMaker\bin\Debug\AdvGameBookMaker.pdb
+c:\users\genbu hase\ドキュメント\visual studio 2017\Projects\AdvGameBookMaker\AdvGameBookMaker\obj\Debug\AdvGameBookMaker.csprojResolveAssemblyReference.cache
+c:\users\genbu hase\ドキュメント\visual studio 2017\Projects\AdvGameBookMaker\AdvGameBookMaker\obj\Debug\AdvGameBookMaker.Base.resources
+c:\users\genbu hase\ドキュメント\visual studio 2017\Projects\AdvGameBookMaker\AdvGameBookMaker\obj\Debug\AdvGameBookMaker.Properties.Resources.resources
+c:\users\genbu hase\ドキュメント\visual studio 2017\Projects\AdvGameBookMaker\AdvGameBookMaker\obj\Debug\AdvGameBookMaker.csproj.GenerateResource.Cache
+c:\users\genbu hase\ドキュメント\visual studio 2017\Projects\AdvGameBookMaker\AdvGameBookMaker\obj\Debug\AdvGameBookMaker.exe
+c:\users\genbu hase\ドキュメント\visual studio 2017\Projects\AdvGameBookMaker\AdvGameBookMaker\obj\Debug\AdvGameBookMaker.pdb
+C:\Users\Genbu Hase\GitHub\AdvBookMaker\AdvGameBookMaker\AdvGameBookMaker\bin\Debug\AdvGameBookMaker.exe.config
+C:\Users\Genbu Hase\GitHub\AdvBookMaker\AdvGameBookMaker\AdvGameBookMaker\bin\Debug\AdvGameBookMaker.exe
+C:\Users\Genbu Hase\GitHub\AdvBookMaker\AdvGameBookMaker\AdvGameBookMaker\bin\Debug\AdvGameBookMaker.pdb
+C:\Users\Genbu Hase\GitHub\AdvBookMaker\AdvGameBookMaker\AdvGameBookMaker\obj\Debug\AdvGameBookMaker.csprojResolveAssemblyReference.cache
+C:\Users\Genbu Hase\GitHub\AdvBookMaker\AdvGameBookMaker\AdvGameBookMaker\obj\Debug\AdvGameBookMaker.Base.resources
+C:\Users\Genbu Hase\GitHub\AdvBookMaker\AdvGameBookMaker\AdvGameBookMaker\obj\Debug\AdvGameBookMaker.Properties.Resources.resources
+C:\Users\Genbu Hase\GitHub\AdvBookMaker\AdvGameBookMaker\AdvGameBookMaker\obj\Debug\AdvGameBookMaker.csproj.GenerateResource.Cache
+C:\Users\Genbu Hase\GitHub\AdvBookMaker\AdvGameBookMaker\AdvGameBookMaker\obj\Debug\AdvGameBookMaker.exe
+C:\Users\Genbu Hase\GitHub\AdvBookMaker\AdvGameBookMaker\AdvGameBookMaker\obj\Debug\AdvGameBookMaker.pdb
