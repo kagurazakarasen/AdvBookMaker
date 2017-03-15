@@ -34,16 +34,16 @@
 			this.MenuBar_Publish_ePubFormat = new System.Windows.Forms.ToolStripMenuItem();
 			this.Manager = new System.Windows.Forms.TabControl();
 			this.Manager_Editor = new System.Windows.Forms.TabPage();
+			this.Manager_Editor_SceneList_L = new System.Windows.Forms.Label();
 			this.Manager_Editor_Choices = new System.Windows.Forms.GroupBox();
 			this.Manager_Editor_SceneList = new System.Windows.Forms.ListBox();
 			this.Manager_Editor_SceneContent = new System.Windows.Forms.TextBox();
 			this.Manager_Editor_SceneName_L = new System.Windows.Forms.Label();
 			this.Manager_Editor_SceneName = new System.Windows.Forms.TextBox();
 			this.Manager_Scenes = new System.Windows.Forms.TabPage();
-			this.Manager_Editor_SceneList_L = new System.Windows.Forms.Label();
 			this.Data = new System.Windows.Forms.DataGridView();
-			this.label1 = new System.Windows.Forms.Label();
-			this.Manager_Scenes_Scene_Title = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.Version = new System.Windows.Forms.Label();
+			this.Manager_Scenes_Data_Title = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.MenuBar.SuspendLayout();
 			this.Manager.SuspendLayout();
 			this.Manager_Editor.SuspendLayout();
@@ -123,6 +123,11 @@
 			this.Manager_Editor.Name = "Manager_Editor";
 			this.Manager_Editor.UseVisualStyleBackColor = true;
 			// 
+			// Manager_Editor_SceneList_L
+			// 
+			resources.ApplyResources(this.Manager_Editor_SceneList_L, "Manager_Editor_SceneList_L");
+			this.Manager_Editor_SceneList_L.Name = "Manager_Editor_SceneList_L";
+			// 
 			// Manager_Editor_Choices
 			// 
 			resources.ApplyResources(this.Manager_Editor_Choices, "Manager_Editor_Choices");
@@ -157,36 +162,31 @@
 			this.Manager_Scenes.Name = "Manager_Scenes";
 			this.Manager_Scenes.UseVisualStyleBackColor = true;
 			// 
-			// Manager_Editor_SceneList_L
-			// 
-			resources.ApplyResources(this.Manager_Editor_SceneList_L, "Manager_Editor_SceneList_L");
-			this.Manager_Editor_SceneList_L.Name = "Manager_Editor_SceneList_L";
-			// 
 			// Data
 			// 
 			this.Data.AllowUserToOrderColumns = true;
 			resources.ApplyResources(this.Data, "Data");
 			this.Data.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
 			this.Data.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Manager_Scenes_Scene_Title});
+            this.Manager_Scenes_Data_Title});
 			this.Data.Name = "Data";
 			this.Data.RowTemplate.Height = 21;
 			// 
-			// label1
+			// Version
 			// 
-			resources.ApplyResources(this.label1, "label1");
-			this.label1.Name = "label1";
+			resources.ApplyResources(this.Version, "Version");
+			this.Version.Name = "Version";
 			// 
-			// Manager_Scenes_Scene_Title
+			// Manager_Scenes_Data_Title
 			// 
-			resources.ApplyResources(this.Manager_Scenes_Scene_Title, "Manager_Scenes_Scene_Title");
-			this.Manager_Scenes_Scene_Title.Name = "Manager_Scenes_Scene_Title";
+			resources.ApplyResources(this.Manager_Scenes_Data_Title, "Manager_Scenes_Data_Title");
+			this.Manager_Scenes_Data_Title.Name = "Manager_Scenes_Data_Title";
 			// 
 			// Base
 			// 
 			resources.ApplyResources(this, "$this");
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.Controls.Add(this.label1);
+			this.Controls.Add(this.Version);
 			this.Controls.Add(this.Manager);
 			this.Controls.Add(this.MenuBar);
 			this.MainMenuStrip = this.MenuBar;
@@ -223,8 +223,8 @@
 		private System.Windows.Forms.GroupBox Manager_Editor_Choices;
 		private System.Windows.Forms.Label Manager_Editor_SceneList_L;
 		private System.Windows.Forms.DataGridView Data;
-		private System.Windows.Forms.DataGridViewTextBoxColumn Manager_Scenes_Scene_Title;
-		private System.Windows.Forms.Label label1;
+		private System.Windows.Forms.Label Version;
+		private System.Windows.Forms.DataGridViewTextBoxColumn Manager_Scenes_Data_Title;
 	}
 }
 
