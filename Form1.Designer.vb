@@ -83,19 +83,19 @@ Partial Class form1
         'NewToolStripMenuItem
         '
         Me.NewToolStripMenuItem.Name = "NewToolStripMenuItem"
-        Me.NewToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.NewToolStripMenuItem.Size = New System.Drawing.Size(103, 22)
         Me.NewToolStripMenuItem.Text = "New"
         '
         'OpenToolStripMenuItem
         '
         Me.OpenToolStripMenuItem.Name = "OpenToolStripMenuItem"
-        Me.OpenToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.OpenToolStripMenuItem.Size = New System.Drawing.Size(103, 22)
         Me.OpenToolStripMenuItem.Text = "Open"
         '
         'SaveToolStripMenuItem
         '
         Me.SaveToolStripMenuItem.Name = "SaveToolStripMenuItem"
-        Me.SaveToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.SaveToolStripMenuItem.Size = New System.Drawing.Size(103, 22)
         Me.SaveToolStripMenuItem.Text = "Save"
         '
         'PublishToolStripMenuItem
@@ -206,7 +206,7 @@ Partial Class form1
         Me.GroupBox1.Size = New System.Drawing.Size(430, 147)
         Me.GroupBox1.TabIndex = 12
         Me.GroupBox1.TabStop = False
-        Me.GroupBox1.Text = "選択枝"
+        Me.GroupBox1.Text = "選択肢"
         '
         'Label3
         '
