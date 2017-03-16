@@ -1,0 +1,12 @@
+C:\Users\Genbu Hase\GitHub\AdvBookMaker\Project\AdvBookMaker On C-Sharp\bin\Debug\AdvBookMaker On C-Sharp.exe.config
+C:\Users\Genbu Hase\GitHub\AdvBookMaker\Project\AdvBookMaker On C-Sharp\bin\Debug\AdvBookMaker On C-Sharp.exe
+C:\Users\Genbu Hase\GitHub\AdvBookMaker\Project\AdvBookMaker On C-Sharp\bin\Debug\AdvBookMaker On C-Sharp.pdb
+C:\Users\Genbu Hase\GitHub\AdvBookMaker\Project\AdvBookMaker On C-Sharp\bin\Debug\ja\AdvBookMaker On C-Sharp.resources.dll
+C:\Users\Genbu Hase\GitHub\AdvBookMaker\Project\AdvBookMaker On C-Sharp\obj\Debug\AdvBookMaker On C-Sharp.csprojResolveAssemblyReference.cache
+C:\Users\Genbu Hase\GitHub\AdvBookMaker\Project\AdvBookMaker On C-Sharp\obj\Debug\AdvBookMaker.Base.resources
+C:\Users\Genbu Hase\GitHub\AdvBookMaker\Project\AdvBookMaker On C-Sharp\obj\Debug\AdvBookMaker.Properties.Resources.resources
+C:\Users\Genbu Hase\GitHub\AdvBookMaker\Project\AdvBookMaker On C-Sharp\obj\Debug\AdvBookMaker.Base.ja.resources
+C:\Users\Genbu Hase\GitHub\AdvBookMaker\Project\AdvBookMaker On C-Sharp\obj\Debug\AdvBookMaker On C-Sharp.csproj.GenerateResource.Cache
+C:\Users\Genbu Hase\GitHub\AdvBookMaker\Project\AdvBookMaker On C-Sharp\obj\Debug\ja\AdvBookMaker On C-Sharp.resources.dll
+C:\Users\Genbu Hase\GitHub\AdvBookMaker\Project\AdvBookMaker On C-Sharp\obj\Debug\AdvBookMaker On C-Sharp.exe
+C:\Users\Genbu Hase\GitHub\AdvBookMaker\Project\AdvBookMaker On C-Sharp\obj\Debug\AdvBookMaker On C-Sharp.pdb
