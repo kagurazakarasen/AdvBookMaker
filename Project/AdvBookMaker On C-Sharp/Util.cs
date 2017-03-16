@@ -26,17 +26,35 @@ namespace AdvBookMaker {
 				this.Path = FilePath;
 				this.Data = View;
 			}
-			
 
+
+
+			private void ProjectInit() {
+				
+			}
+
+			public void Open() {
+				
+			}
 
 			public void Create() {
-				Directory.CreateDirectory(this.Path);
-				File.Create(Path);
+				Directory.CreateDirectory(Directory.GetParent(this.Path).FullName);
+				File.Create(this.Path);
+
+				this.ProjectInit();
 			}
 
-			public void setData(DataGridView View) {
-				this.Data = View;
+			public void Delete() {
+				File.Delete(this.Path);
 			}
+
+
+
+			public void setPath(String FilePath) { this.Path = FilePath; }
+			public String getPath() { return this.Path; }
+
+			public void setData(DataGridView View) { this.Data = View; }
+			public DataGridView getData() { return this.Data; }
 		}
 	}
 }
