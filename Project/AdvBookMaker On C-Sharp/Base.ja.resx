@@ -118,6 +118,18 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="MenuBar_File.Size" type="System.Drawing.Size, System.Drawing">
+    <value>70, 20</value>
+  </data>
+  <data name="MenuBar_File.Text" xml:space="preserve">
+    <value>ファイル(&amp;F)</value>
+  </data>
+  <data name="MenuBar_Publish.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 20</value>
+  </data>
+  <data name="MenuBar_Publish.Text" xml:space="preserve">
+    <value>配布(&amp;P)</value>
+  </data>
   <data name="MenuBar_File_New.Size" type="System.Drawing.Size, System.Drawing">
     <value>141, 22</value>
   </data>
@@ -136,12 +148,6 @@
   <data name="MenuBar_File_Save.Text" xml:space="preserve">
     <value>保存(&amp;S)</value>
   </data>
-  <data name="MenuBar_File.Size" type="System.Drawing.Size, System.Drawing">
-    <value>70, 20</value>
-  </data>
-  <data name="MenuBar_File.Text" xml:space="preserve">
-    <value>ファイル(&amp;F)</value>
-  </data>
   <data name="MenuBar_Publish_HTML.Size" type="System.Drawing.Size, System.Drawing">
     <value>184, 22</value>
   </data>
@@ -154,11 +160,8 @@
   <data name="MenuBar_Publish_ePubFormat.Text" xml:space="preserve">
     <value>ePub形式で書き出し</value>
   </data>
-  <data name="MenuBar_Publish.Size" type="System.Drawing.Size, System.Drawing">
-    <value>60, 20</value>
-  </data>
-  <data name="MenuBar_Publish.Text" xml:space="preserve">
-    <value>配布(&amp;P)</value>
+  <data name="Manager_Editor.Text" xml:space="preserve">
+    <value>エディター</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="Manager_Editor_AddScene.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
@@ -185,8 +188,8 @@
   <data name="Manager_Editor_SceneName_L.Text" xml:space="preserve">
     <value>シーン</value>
   </data>
-  <data name="Manager_Editor.Text" xml:space="preserve">
-    <value>エディター</value>
+  <data name="Manager_Scenes.Text" xml:space="preserve">
+    <value>シーン</value>
   </data>
   <data name="Manager_Scenes_Data_Scene.HeaderText" xml:space="preserve">
     <value>名称</value>
@@ -200,11 +203,14 @@
   <data name="Manager_Scenes_Data_Choice1_Link.HeaderText" xml:space="preserve">
     <value>リンク1</value>
   </data>
-  <data name="Manager_Scenes.Text" xml:space="preserve">
-    <value>シーン</value>
-  </data>
   <data name="Version.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
+  </data>
+  <data name="OpenAdvBookMakerProjectDialog.Filter" xml:space="preserve">
+    <value>AdventureBook Makerのプロジェクト(*.project)|*.project|全てのファイル(*.*)|*.*</value>
+  </data>
+  <data name="SaveAdvBookMakerProjectDialog.Filter" xml:space="preserve">
+    <value>AdventureBook Makerのプロジェクト(*.project)|*.project</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

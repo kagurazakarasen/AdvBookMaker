@@ -48,6 +48,8 @@
 			this.Manager_Scenes_Data_Choice1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.Manager_Scenes_Data_Choice1_Link = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.Version = new System.Windows.Forms.Label();
+			this.OpenAdvBookMakerProjectDialog = new System.Windows.Forms.OpenFileDialog();
+			this.SaveAdvBookMakerProjectDialog = new System.Windows.Forms.SaveFileDialog();
 			this.MenuBar.SuspendLayout();
 			this.Manager.SuspendLayout();
 			this.Manager_Editor.SuspendLayout();
@@ -81,6 +83,7 @@
 			// 
 			this.MenuBar_File_Open.Name = "MenuBar_File_Open";
 			resources.ApplyResources(this.MenuBar_File_Open, "MenuBar_File_Open");
+			this.MenuBar_File_Open.Click += new System.EventHandler(this.MenuBar_File_Open_Click);
 			// 
 			// MenuBar_File_Save
 			// 
@@ -212,6 +215,18 @@
 			// 
 			resources.ApplyResources(this.Version, "Version");
 			this.Version.Name = "Version";
+			this.Version.Text += System.Reflection.Assembly.GetExecutingAssembly().GetName().Version.ToString();
+			// 
+			// OpenAdvBookMakerProjectDialog
+			// 
+			this.OpenAdvBookMakerProjectDialog.DefaultExt = "project";
+			resources.ApplyResources(this.OpenAdvBookMakerProjectDialog, "OpenAdvBookMakerProjectDialog");
+			// 
+			// SaveAdvBookMakerProjectDialog
+			// 
+			this.SaveAdvBookMakerProjectDialog.DefaultExt = "project";
+			this.SaveAdvBookMakerProjectDialog.FileName = "Untitled.project";
+			resources.ApplyResources(this.SaveAdvBookMakerProjectDialog, "SaveAdvBookMakerProjectDialog");
 			// 
 			// Base
 			// 
@@ -260,6 +275,8 @@
 		private System.Windows.Forms.DataGridViewTextBoxColumn Manager_Scenes_Data_Contents;
 		private System.Windows.Forms.DataGridViewTextBoxColumn Manager_Scenes_Data_Choice1;
 		private System.Windows.Forms.DataGridViewTextBoxColumn Manager_Scenes_Data_Choice1_Link;
+		private System.Windows.Forms.OpenFileDialog OpenAdvBookMakerProjectDialog;
+		private System.Windows.Forms.SaveFileDialog SaveAdvBookMakerProjectDialog;
 	}
 }
 
