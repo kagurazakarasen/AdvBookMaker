@@ -19,7 +19,8 @@ End Enum
 Public Class form1
 
     '選択肢数(x2) 選択肢（質問）数ｘ２です （質問と飛び先フォームの数） 
-    Private SW_MAXx2 As Integer = 8
+    'Private SW_MAXx2 As Integer = 8
+    Private SW_MAXx2 As Integer = 20    'PIスペシャル：選択肢が１０あるので倍の２０必要。※それとGridもあらかじめ増やしておかないとダメ。
 
     Private CSV_FILE_NAME_FULL As String = ""
 
@@ -591,6 +592,22 @@ Public Class form1
         Dim q0 As String, q1 As String, q2 As String, q3 As String
         Dim q4 As String, q5 As String, q6 As String, q7 As String
 
+        'Piスペシャル用
+        Dim q8 As String
+        Dim q9 As String
+        Dim q10 As String
+        Dim q11 As String
+        Dim q12 As String
+        Dim q13 As String
+        Dim q14 As String
+        Dim q15 As String
+        Dim q16 As String
+        Dim q17 As String
+        Dim q18 As String
+        Dim q19 As String
+        Dim q20 As String
+
+
         For r As Integer = 0 To DataGridView1.RowCount - 1
 
             'シーン名とコンテンツ取得
@@ -622,6 +639,23 @@ Public Class form1
             q5 = ""
             q6 = ""
             q7 = ""
+
+            'Piスペシャル用
+            q8 = ""
+            q9 = ""
+            q10 = ""
+            q11 = ""
+            q12 = ""
+            q13 = ""
+            q14 = ""
+            q15 = ""
+            q16 = ""
+            q17 = ""
+            q18 = ""
+            q19 = ""
+            q20 = ""
+
+
             '質問と飛び先
             DataGridView1.CurrentCell = DataGridView1(2, r)
             If (DataGridView1.CurrentCell.Value <> "") Then q0 = DataGridView1.CurrentCell.Value.ToString
@@ -644,6 +678,47 @@ Public Class form1
             If (DataGridView1.CurrentCell.Value <> "") Then q6 = DataGridView1.CurrentCell.Value.ToString
             DataGridView1.CurrentCell = DataGridView1(9, r)
             If (DataGridView1.CurrentCell.Value <> "") Then q7 = DataGridView1.CurrentCell.Value.ToString
+
+
+            'Piスペシャル用
+            DataGridView1.CurrentCell = DataGridView1(10, r)
+            If (DataGridView1.CurrentCell.Value <> "") Then q8 = DataGridView1.CurrentCell.Value.ToString
+            DataGridView1.CurrentCell = DataGridView1(11, r)
+            If (DataGridView1.CurrentCell.Value <> "") Then q9 = DataGridView1.CurrentCell.Value.ToString
+            DataGridView1.CurrentCell = DataGridView1(12, r)
+            If (DataGridView1.CurrentCell.Value <> "") Then q10 = DataGridView1.CurrentCell.Value.ToString
+
+
+
+
+            DataGridView1.CurrentCell = DataGridView1(13, r)
+            If (DataGridView1.CurrentCell.Value <> "") Then q11 = DataGridView1.CurrentCell.Value.ToString
+
+            DataGridView1.CurrentCell = DataGridView1(14, r)
+            If (DataGridView1.CurrentCell.Value <> "") Then q12 = DataGridView1.CurrentCell.Value.ToString
+
+            DataGridView1.CurrentCell = DataGridView1(15, r)
+            If (DataGridView1.CurrentCell.Value <> "") Then q13 = DataGridView1.CurrentCell.Value.ToString
+
+
+            DataGridView1.CurrentCell = DataGridView1(16, r)
+            If (DataGridView1.CurrentCell.Value <> "") Then q14 = DataGridView1.CurrentCell.Value.ToString
+            DataGridView1.CurrentCell = DataGridView1(17, r)
+            If (DataGridView1.CurrentCell.Value <> "") Then q15 = DataGridView1.CurrentCell.Value.ToString
+            DataGridView1.CurrentCell = DataGridView1(18, r)
+            If (DataGridView1.CurrentCell.Value <> "") Then q16 = DataGridView1.CurrentCell.Value.ToString
+            DataGridView1.CurrentCell = DataGridView1(19, r)
+            If (DataGridView1.CurrentCell.Value <> "") Then q17 = DataGridView1.CurrentCell.Value.ToString
+
+            DataGridView1.CurrentCell = DataGridView1(20, r)
+            If (DataGridView1.CurrentCell.Value <> "") Then q18 = DataGridView1.CurrentCell.Value.ToString
+            DataGridView1.CurrentCell = DataGridView1(21, r)
+            If (DataGridView1.CurrentCell.Value <> "") Then q19 = DataGridView1.CurrentCell.Value.ToString
+            DataGridView1.CurrentCell = DataGridView1(22, r)
+            If (DataGridView1.CurrentCell.Value <> "") Then q20 = DataGridView1.CurrentCell.Value.ToString
+
+
+
 
 
             Try
@@ -676,6 +751,20 @@ Public Class form1
                 ctx.Put("q6", q6)
                 ctx.Put("q7", q7)
 
+                'Piスペシャル用
+                ctx.Put("q8", q8)
+                ctx.Put("q9", q9)
+                ctx.Put("q10", q10)
+                ctx.Put("q11", q11)
+                ctx.Put("q12", q12)
+                ctx.Put("q13", q13)
+                ctx.Put("q14", q14)
+                ctx.Put("q15", q15)
+                ctx.Put("q16", q16)
+                ctx.Put("q17", q17)
+                ctx.Put("q18", q18)
+                ctx.Put("q19", q19)
+                ctx.Put("q20", q20)
 
                 Try
 

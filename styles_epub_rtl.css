@@ -1,0 +1,372 @@
+﻿@charset "utf-8";
+/* BCCKS Epub Style Reset / 別ファイルだったものを同一化。byらせん*/
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+}
+
+div {
+  display: block;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  font-weight: normal;
+  vertical-align: baseline;
+
+}
+
+h1, h2, h3, h4, h5, h6, p, div.blockquote {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  font-weight: normal;
+  text-indent: 0;
+}
+
+a {
+  font-style: inherit;
+  font-weight: inherit;
+  text-decoration: none;
+  background: transparent;
+}
+
+div.caption,
+div.credit,
+span {
+  font-style: normal;
+  font-weight: normal;
+  text-align: justify;
+  text-justify: inter-ideograph;
+  word-spacing: normal;
+  word-wrap: break-word;
+  white-space: normal;
+}
+
+img, a img {
+  margin: 0;
+  padding: 0;
+  width: auto;
+  height: auto;
+  border: none;
+  vertical-align: bottom;
+  background: transparent;
+}
+
+/* 以下、BCCKS Epub Style Standard RighttoLeft より*/
+@page { margin: 0 1.3em; }
+body {
+  -webkit-line-break: normal;
+  -epub-line-break: normal;
+  -webkit-word-break: normal;
+  -epub-word-break: normal;
+  -webkit-hyphens: auto;
+  -epub-hyphens: auto;
+  word-spacing: normal;
+  letter-spacing: normal;
+  word-wrap: break-word; /* 半角長文の強制改行を許す（url対策） */
+  white-space: normal;
+  text-align: justify;
+  text-justify: inter-ideograph;
+}
+/* 縦書 */
+.tableofcontents01,
+.standard01,
+.standard02,
+.standard03,
+.standard04,
+.twocol01,
+.threecol01,
+.spread01 {
+  writing-mode: vertical-rl;
+  -webkit-writing-mode: vertical-rl;
+  -epub-writing-mode: vertical-rl;
+  font-weight: normal;
+}
+
+
+
+/* 文字修飾 */
+
+/* 見出 */
+h1 {
+  font-size: 1.9em;
+  font-weight: normal;
+  line-height: 1.3em;
+  font-family: "IPA明朝", "IPAMincho", "ＭＳ 明朝", "MS Mincho", serif-ja, serif;
+}
+h2 {
+  font-size: 1.5em;
+  font-weight: normal;
+  line-height: 1.3em;
+  font-family: "IPA明朝", "IPAMincho", "ＭＳ 明朝", "MS Mincho", serif-ja, serif;
+}
+h3 {
+  font-size: 1.1em;
+  font-weight: bold;
+  line-height: 1.3em;
+  font-family: "メイリオ", Meiryo, "IPAゴシック", "IPAGothic", "MS ゴシック", "ＭＳ ゴシック", sans-serif-ja, sans-serif;
+}
+.tableofcontents01 h1,
+.standard01 h1,
+.standard02 h1,
+.standard03 h1,
+.standard04 h1,
+.twocol01 h1,
+.threecol01 h1,
+.spread01 h1 {
+  font-family: "HiraMinProN-W3", "ヒラギノ明朝 ProN W3", "HiraMinPro-W3", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro W3", "游明朝", "YuMincho", "IPA明朝", "IPAMincho", "ＭＳ 明朝", "MS Mincho", serif-ja, serif;
+}
+.tableofcontents01 h2,
+.standard01 h2,
+.standard02 h2,
+.standard03 h2,
+.standard04 h2,
+.twocol01 h2,
+.threecol01 h2,
+.spread01 h2 {
+}
+.tableofcontents01 h3,
+.standard01 h3,
+.standard02 h3,
+.standard03 h3,
+.standard04 h3,
+.twocol01 h3,
+.threecol01 h3,
+.spread01 h3 {
+  font-family: "HiraMinProN-W3", "ヒラギノ明朝 ProN W3", "HiraMinPro-W3", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro W3", "游明朝", "YuMincho", "IPA明朝", "IPAMincho", "ＭＳ 明朝", "MS Mincho", serif-ja, serif;
+}
+
+/* 本文 */
+p {
+  font-size: 1.0em;
+  font-weight: normal;
+  line-height: 1.7em;
+  font-family: "HiraMinProN-W3", "ヒラギノ明朝 ProN W3", "HiraMinPro-W3", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro W3", "游明朝", "YuMincho", "IPA明朝", "IPAMincho", "ＭＳ 明朝", "MS Mincho", serif-ja, serif;
+}
+.tableofcontents01 p,
+.standard01 p,
+.standard02 p,
+.standard03 p,
+.standard04 p,
+.twocol01 p,
+.threecol01 p,
+.spread01 p {
+  font-family: "HiraMinProN-W3", "ヒラギノ明朝 ProN W3", "HiraMinPro-W3", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro W3", "游明朝", "YuMincho", "IPA明朝", "IPAMincho", "ＭＳ 明朝", "MS Mincho", serif-ja, serif;
+}
+
+/* リンク */
+a {
+  color: #2660bf;
+}
+
+a:visited {
+  color: #2660bf;
+}
+
+
+/* 強弱調 */
+span.em {
+  font-weight: normal;
+  font-family: "HiraKakuProN-W3", "ヒラギノ角ゴ ProN W3", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro W3", "游ゴシック", "YuGothic", "メイリオ", Meiryo, "IPAゴシック", "IPAGothic", "MS ゴシック", "ＭＳ ゴシック", sans-serif-ja, sans-serif;
+}
+span.strong {
+  font-weight: bold;
+  font-family: "HiraKakuProN-W6", "ヒラギノ角ゴ ProN W6", "HiraKakuPro-W6", "ヒラギノ角ゴ Pro W6", "Hiragino Kaku Gothic Pro W6", "游ゴシック", "YuGothic", "メイリオ", Meiryo, "IPAゴシック", "IPAGothic", "MS ゴシック", "ＭＳ ゴシック", sans-serif-ja, sans-serif;
+
+}
+span.weak {
+  font-size: 0.9em;
+  font-weight: normal;
+  font-family: "HiraMinProN-W3", "ヒラギノ明朝 ProN W3", "HiraMinPro-W3", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro W3", "游明朝", "YuMincho", "IPA明朝", "IPAMincho", "ＭＳ 明朝", "MS Mincho", serif-ja, serif;
+}
+span.weaker {
+  font-size: 0.8em;
+  font-weight: normal;
+  font-family: "HiraMinProN-W3", "ヒラギノ明朝 ProN W3", "HiraMinPro-W3", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro W3", "游明朝", "YuMincho", "IPA明朝", "IPAMincho", "ＭＳ 明朝", "MS Mincho", serif-ja, serif;
+}
+.tableofcontents01 span.em,
+.standard01 span.em,
+.standard02 span.em,
+.standard03 span.em,
+.standard04 span.em,
+.twocol01 span.em,
+.threecol01 span.em,
+.spread01 span.em {
+}
+.tableofcontents01 span.strong,
+.standard01 span.strong,
+.standard02 span.strong,
+.standard03 span.strong,
+.standard04 span.strong,
+.twocol01 span.strong,
+.threecol01 span.strong,
+.spread01 span.strong {
+}
+.tableofcontents01 span.weak,
+.standard01 span.weak,
+.standard02 span.weak,
+.standard03 span.weak,
+.standard04 span.weak,
+.twocol01 span.weak,
+.threecol01 span.weak,
+.spread01 span.weak,
+.tableofcontents01 span.weaker,
+.standard01 span.weaker,
+.standard02 span.weaker,
+.standard03 span.weaker,
+.standard04 span.weaker,
+.twocol01 span.weaker,
+.threecol01 span.weaker,
+.spread01 span.weaker {
+}
+
+.standard01 h1 span.weak,
+.standard02 h1 span.weak,
+.standard03 h1 span.weak,
+.standard04 h1 span.weak,
+.twocol01 h1 span.weak,
+.threecol01 h1 span.weak,
+.colophon01 h1 span.weak,
+.accent01 h1 span.weak,
+.frontpage01 h1 span.weak {
+  font-size: 0.6em;
+}
+.standard01 h1 span.weaker,
+.standard02 h1 span.weaker,
+.standard03 h1 span.weaker,
+.standard04 h1 span.weaker,
+.twocol01 h1 span.weaker,
+.threecol01 h1 span.weaker,
+.colophon01 h1 span.weaker,
+.accent01 h1 span.weaker,
+.frontpage01 h1 span.weaker {
+  font-size: 0.5em;
+}
+.standard01 h2 span.weak,
+.standard02 h2 span.weak,
+.standard03 h2 span.weak,
+.standard04 h2 span.weak,
+.twocol01 h2 span.weak,
+.threecol01 h2 span.weak,
+.colophon01 h2 span.weak,
+.accent01 h2 span.weak,
+.frontpage01 h2 span.weak {
+  font-size: 0.7em;
+}
+.standard01 h2 span.weaker,
+.standard02 h2 span.weaker,
+.standard03 h2 span.weaker,
+.standard04 h2 span.weaker,
+.twocol01 h2 span.weaker,
+.threecol01 h2 span.weaker,
+.colophon01 h2 span.weaker,
+.accent01 h2 span.weaker,
+.frontpage01 h2 span.weaker {
+  font-size: 0.6em;
+}
+.standard01 h3 span.weak,
+.standard02 h3 span.weak,
+.standard03 h3 span.weak,
+.standard04 h3 span.weak,
+.twocol01 h3 span.weak,
+.threecol01 h3 span.weak,
+.colophon01 h3 span.weak,
+.accent01 h3 span.weak,
+.frontpage01 h3 span.weak {
+  font-size: 0.8em;
+}
+.standard01 h3 span.weaker,
+.standard02 h3 span.weaker,
+.standard03 h3 span.weaker,
+.standard04 h3 span.weaker,
+.twocol01 h3 span.weaker,
+.threecol01 h3 span.weaker,
+.colophon01 h3 span.weaker,
+.accent01 h3 span.weaker,
+.frontpage01 h3 span.weaker {
+  font-size: 0.7em;
+}
+
+/* インデント */
+div.blockquote {
+  font-size: 0.9em;
+  line-height: 1.8em;
+}
+
+
+/* 縦中横 */
+/* 半角の1~2字を立てる */
+.tcy {
+  text-combine: horizontal;
+  -webkit-text-combine : horizontal;
+  -epub-text-combine: horizontal;
+}
+/* 文字を強制的に立てる 半角1文字の場合はtcyを利用 */
+.upright-1 {
+  text-combine: horizontal;
+  -webkit-text-combine : horizontal;
+  -epub-text-combine: horizontal;
+}
+/* 文字を強制的に立てる */
+.upright {
+  text-orientation: upright;
+  -webkit-text-orientation: upright;
+  -epub-text-orientation: upright;
+}
+/* 文字を強制的に寝かせる */
+.sideways {
+  text-orientation: sideways;
+  -webkit-text-orientation: sideways;
+  -epub-text-orientation: sideways;
+}
+
+/* 画像 キャプション */
+
+div.figure {
+  break-before: avoid;
+  break-after: avoid;
+  -webkit-break-before: avoid;
+  -webkit-break-after: avoid;
+  clear: both;
+
+}
+div.size_m,
+div.size_l,
+div.size_xl {
+  break-before: always;
+  break-after: always;
+  -webkit-break-before: always;
+  -webkit-break-after: always;
+  page-break-before: always;
+  page-break-after: always;
+}
+
+
+/* BCCKSでは改ページ指定 */
+div.page_break_single,
+div.page_break_both,
+div.page_break_force_single {
+  break-before: always;
+  break-after: always;
+  -webkit-break-before: always;
+  -webkit-break-after: always;
+  page-break-before: always;
+  page-break-after: always;
+}
+nav#landmarks {
+    display:none;
+}
+
+nav#page-list {
+    display:none;
+}
+
+ol {
+    list-style-type: none;
+}
