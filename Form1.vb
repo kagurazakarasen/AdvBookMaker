@@ -217,6 +217,7 @@ Public Class form1
 
                 If (myCol > SW_MAXx2 + 2) Then
                     MessageBox.Show(" ColumnsOver =" & myCol.ToString)
+                    'ここでcol追加いれること
                 End If
                 Me.DataGridView1(myCol, myRow).Value = currentColumn
                 myCol += 1
@@ -608,7 +609,13 @@ Public Class form1
         Dim q20 As String
 
 
+        'Epub作成フォーム
+        Form3.Show()
+        Form3.ProgressBar1.Maximum = DataGridView1.RowCount - 1
+
+
         For r As Integer = 0 To DataGridView1.RowCount - 1
+            Form3.ProgressBar1.Value = r
 
             'シーン名とコンテンツ取得
             DataGridView1.CurrentCell = DataGridView1(0, r)
@@ -820,6 +827,9 @@ Public Class form1
     Private Sub Epub作成ToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles Epub作成ToolStripMenuItem.Click
         'Epub作成（あれ、Sub以下に漢字はいってるけどいいの？　良いらしい。
         ' MsgBox("Epubいきます")
+
+        'Epub作成フォーム
+        Form3.Show()
 
 
         Dim title As String = "サンプルADV"
