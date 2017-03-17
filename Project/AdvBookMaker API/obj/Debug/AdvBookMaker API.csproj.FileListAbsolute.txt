@@ -1,0 +1,5 @@
+C:\Users\Genbu Hase\GitHub\AdvBookMaker\Project\AdvBookMaker API\bin\Debug\AdvBookMaker API.dll
+C:\Users\Genbu Hase\GitHub\AdvBookMaker\Project\AdvBookMaker API\bin\Debug\AdvBookMaker API.pdb
+C:\Users\Genbu Hase\GitHub\AdvBookMaker\Project\AdvBookMaker API\obj\Debug\AdvBookMaker API.csprojResolveAssemblyReference.cache
+C:\Users\Genbu Hase\GitHub\AdvBookMaker\Project\AdvBookMaker API\obj\Debug\AdvBookMaker API.dll
+C:\Users\Genbu Hase\GitHub\AdvBookMaker\Project\AdvBookMaker API\obj\Debug\AdvBookMaker API.pdb

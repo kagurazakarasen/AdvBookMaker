@@ -10,3 +10,5 @@ C:\Users\Genbu Hase\GitHub\AdvBookMaker\Project\AdvBookMaker On C-Sharp\obj\Debu
 C:\Users\Genbu Hase\GitHub\AdvBookMaker\Project\AdvBookMaker On C-Sharp\obj\Debug\ja\AdvBookMaker On C-Sharp.resources.dll
 C:\Users\Genbu Hase\GitHub\AdvBookMaker\Project\AdvBookMaker On C-Sharp\obj\Debug\AdvBookMaker On C-Sharp.exe
 C:\Users\Genbu Hase\GitHub\AdvBookMaker\Project\AdvBookMaker On C-Sharp\obj\Debug\AdvBookMaker On C-Sharp.pdb
+C:\Users\Genbu Hase\GitHub\AdvBookMaker\Project\AdvBookMaker On C-Sharp\bin\Debug\AdvBookMaker API.dll
+C:\Users\Genbu Hase\GitHub\AdvBookMaker\Project\AdvBookMaker On C-Sharp\bin\Debug\AdvBookMaker API.pdb

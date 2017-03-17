@@ -414,52 +414,31 @@
   <data name="&gt;&gt;Manager_Editor.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="Data.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Bottom, Left, Right</value>
-  </data>
-  <metadata name="Manager_Scenes_Data_Scene.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
+  <metadata name="SceneData.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>623, 17</value>
   </metadata>
-  <data name="Manager_Scenes_Data_Scene.HeaderText" xml:space="preserve">
-    <value>Scene</value>
+  <data name="Manager_Scenes_List.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
   </data>
-  <metadata name="Manager_Scenes_Data_Contents.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="Manager_Scenes_Data_Contents.HeaderText" xml:space="preserve">
-    <value>Contents</value>
+  <data name="Manager_Scenes_List.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 5</value>
   </data>
-  <metadata name="Manager_Scenes_Data_Choice1.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="Manager_Scenes_Data_Choice1.HeaderText" xml:space="preserve">
-    <value>Choice1</value>
+  <data name="Manager_Scenes_List.Size" type="System.Drawing.Size, System.Drawing">
+    <value>582, 444</value>
   </data>
-  <metadata name="Manager_Scenes_Data_Choice1_Link.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="Manager_Scenes_Data_Choice1_Link.HeaderText" xml:space="preserve">
-    <value>Link1</value>
-  </data>
-  <data name="Data.Location" type="System.Drawing.Point, System.Drawing">
-    <value>8, 8</value>
-  </data>
-  <data name="Data.Size" type="System.Drawing.Size, System.Drawing">
-    <value>575, 437</value>
-  </data>
-  <data name="Data.TabIndex" type="System.Int32, mscorlib">
+  <data name="Manager_Scenes_List.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;Data.Name" xml:space="preserve">
-    <value>Data</value>
+  <data name="&gt;&gt;Manager_Scenes_List.Name" xml:space="preserve">
+    <value>Manager_Scenes_List</value>
   </data>
-  <data name="&gt;&gt;Data.Type" xml:space="preserve">
+  <data name="&gt;&gt;Manager_Scenes_List.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;Data.Parent" xml:space="preserve">
+  <data name="&gt;&gt;Manager_Scenes_List.Parent" xml:space="preserve">
     <value>Manager_Scenes</value>
   </data>
-  <data name="&gt;&gt;Data.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;Manager_Scenes_List.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <data name="Manager_Scenes.Location" type="System.Drawing.Point, System.Drawing">
@@ -1812,30 +1791,6 @@
   <data name="&gt;&gt;MenuBar_Publish_ePubFormat.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;Manager_Scenes_Data_Scene.Name" xml:space="preserve">
-    <value>Manager_Scenes_Data_Scene</value>
-  </data>
-  <data name="&gt;&gt;Manager_Scenes_Data_Scene.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Manager_Scenes_Data_Contents.Name" xml:space="preserve">
-    <value>Manager_Scenes_Data_Contents</value>
-  </data>
-  <data name="&gt;&gt;Manager_Scenes_Data_Contents.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Manager_Scenes_Data_Choice1.Name" xml:space="preserve">
-    <value>Manager_Scenes_Data_Choice1</value>
-  </data>
-  <data name="&gt;&gt;Manager_Scenes_Data_Choice1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Manager_Scenes_Data_Choice1_Link.Name" xml:space="preserve">
-    <value>Manager_Scenes_Data_Choice1_Link</value>
-  </data>
-  <data name="&gt;&gt;Manager_Scenes_Data_Choice1_Link.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="&gt;&gt;OpenAdvBookMakerProjectDialog.Name" xml:space="preserve">
     <value>OpenAdvBookMakerProjectDialog</value>
   </data>
@@ -1847,6 +1802,12 @@
   </data>
   <data name="&gt;&gt;SaveAdvBookMakerProjectDialog.Type" xml:space="preserve">
     <value>System.Windows.Forms.SaveFileDialog, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;SceneData.Name" xml:space="preserve">
+    <value>SceneData</value>
+  </data>
+  <data name="&gt;&gt;SceneData.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>Base</value>

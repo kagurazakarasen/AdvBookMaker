@@ -13,6 +13,7 @@
 			if (disposing && (components != null)) {
 				components.Dispose();
 			}
+
 			base.Dispose(disposing);
 		}
 
@@ -23,6 +24,7 @@
 		/// コード エディターで変更しないでください。
 		/// </summary>
 		private void InitializeComponent() {
+			this.components = new System.ComponentModel.Container();
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Base));
 			this.MenuBar = new System.Windows.Forms.MenuStrip();
 			this.MenuBar_File = new System.Windows.Forms.ToolStripMenuItem();
@@ -42,19 +44,17 @@
 			this.Manager_Editor_SceneName_L = new System.Windows.Forms.Label();
 			this.Manager_Editor_SceneName = new System.Windows.Forms.TextBox();
 			this.Manager_Scenes = new System.Windows.Forms.TabPage();
-			this.Data = new System.Windows.Forms.DataGridView();
-			this.Manager_Scenes_Data_Scene = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.Manager_Scenes_Data_Contents = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.Manager_Scenes_Data_Choice1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.Manager_Scenes_Data_Choice1_Link = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.Version = new System.Windows.Forms.Label();
 			this.OpenAdvBookMakerProjectDialog = new System.Windows.Forms.OpenFileDialog();
 			this.SaveAdvBookMakerProjectDialog = new System.Windows.Forms.SaveFileDialog();
+			this.SceneData = new System.Windows.Forms.BindingSource(this.components);
+			this.Manager_Scenes_List = new System.Windows.Forms.DataGridView();
 			this.MenuBar.SuspendLayout();
 			this.Manager.SuspendLayout();
 			this.Manager_Editor.SuspendLayout();
 			this.Manager_Scenes.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.Data)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.SceneData)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.Manager_Scenes_List)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// MenuBar
@@ -173,49 +173,15 @@
 			// 
 			// Manager_Scenes
 			// 
-			this.Manager_Scenes.Controls.Add(this.Data);
+			this.Manager_Scenes.Controls.Add(this.Manager_Scenes_List);
 			resources.ApplyResources(this.Manager_Scenes, "Manager_Scenes");
 			this.Manager_Scenes.Name = "Manager_Scenes";
 			this.Manager_Scenes.UseVisualStyleBackColor = true;
-			// 
-			// Data
-			// 
-			this.Data.AllowUserToOrderColumns = true;
-			resources.ApplyResources(this.Data, "Data");
-			this.Data.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-			this.Data.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Manager_Scenes_Data_Scene,
-            this.Manager_Scenes_Data_Contents,
-            this.Manager_Scenes_Data_Choice1,
-            this.Manager_Scenes_Data_Choice1_Link});
-			this.Data.Name = "Data";
-			this.Data.RowTemplate.Height = 21;
-			// 
-			// Manager_Scenes_Data_Scene
-			// 
-			resources.ApplyResources(this.Manager_Scenes_Data_Scene, "Manager_Scenes_Data_Scene");
-			this.Manager_Scenes_Data_Scene.Name = "Manager_Scenes_Data_Scene";
-			// 
-			// Manager_Scenes_Data_Contents
-			// 
-			resources.ApplyResources(this.Manager_Scenes_Data_Contents, "Manager_Scenes_Data_Contents");
-			this.Manager_Scenes_Data_Contents.Name = "Manager_Scenes_Data_Contents";
-			// 
-			// Manager_Scenes_Data_Choice1
-			// 
-			resources.ApplyResources(this.Manager_Scenes_Data_Choice1, "Manager_Scenes_Data_Choice1");
-			this.Manager_Scenes_Data_Choice1.Name = "Manager_Scenes_Data_Choice1";
-			// 
-			// Manager_Scenes_Data_Choice1_Link
-			// 
-			resources.ApplyResources(this.Manager_Scenes_Data_Choice1_Link, "Manager_Scenes_Data_Choice1_Link");
-			this.Manager_Scenes_Data_Choice1_Link.Name = "Manager_Scenes_Data_Choice1_Link";
 			// 
 			// Version
 			// 
 			resources.ApplyResources(this.Version, "Version");
 			this.Version.Name = "Version";
-			this.Version.Text += System.Reflection.Assembly.GetExecutingAssembly().GetName().Version.ToString();
 			// 
 			// OpenAdvBookMakerProjectDialog
 			// 
@@ -227,6 +193,16 @@
 			this.SaveAdvBookMakerProjectDialog.DefaultExt = "project";
 			this.SaveAdvBookMakerProjectDialog.FileName = "Untitled.project";
 			resources.ApplyResources(this.SaveAdvBookMakerProjectDialog, "SaveAdvBookMakerProjectDialog");
+			// 
+			// Manager_Scenes_List
+			// 
+			this.Manager_Scenes_List.AllowUserToOrderColumns = true;
+			this.Manager_Scenes_List.AutoGenerateColumns = false;
+			this.Manager_Scenes_List.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+			this.Manager_Scenes_List.DataSource = this.SceneData;
+			resources.ApplyResources(this.Manager_Scenes_List, "Manager_Scenes_List");
+			this.Manager_Scenes_List.Name = "Manager_Scenes_List";
+			this.Manager_Scenes_List.RowTemplate.Height = 21;
 			// 
 			// Base
 			// 
@@ -243,7 +219,8 @@
 			this.Manager_Editor.ResumeLayout(false);
 			this.Manager_Editor.PerformLayout();
 			this.Manager_Scenes.ResumeLayout(false);
-			((System.ComponentModel.ISupportInitialize)(this.Data)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.SceneData)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.Manager_Scenes_List)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -268,15 +245,12 @@
 		private System.Windows.Forms.ToolStripMenuItem MenuBar_Publish_ePubFormat;
 		private System.Windows.Forms.GroupBox Manager_Editor_Choices;
 		private System.Windows.Forms.Label Manager_Editor_SceneList_L;
-		private System.Windows.Forms.DataGridView Data;
 		private System.Windows.Forms.Label Version;
 		private System.Windows.Forms.Button Manager_Editor_AddScene;
-		private System.Windows.Forms.DataGridViewTextBoxColumn Manager_Scenes_Data_Scene;
-		private System.Windows.Forms.DataGridViewTextBoxColumn Manager_Scenes_Data_Contents;
-		private System.Windows.Forms.DataGridViewTextBoxColumn Manager_Scenes_Data_Choice1;
-		private System.Windows.Forms.DataGridViewTextBoxColumn Manager_Scenes_Data_Choice1_Link;
 		private System.Windows.Forms.OpenFileDialog OpenAdvBookMakerProjectDialog;
 		private System.Windows.Forms.SaveFileDialog SaveAdvBookMakerProjectDialog;
+		private System.Windows.Forms.BindingSource SceneData;
+		private System.Windows.Forms.DataGridView Manager_Scenes_List;
 	}
 }
 
