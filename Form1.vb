@@ -6,7 +6,8 @@ Imports System.Text
 Imports System.IO.Compression
 Imports System.IO.Compression.ZipFile
 
-'ひと様に見せるつもりじゃなかったのでソースぐちゃぐちゃだわ。ちょっと整理しますねー♪
+
+'ひと様に見せるつもりじゃなかったのでソースぐちゃぐちゃだわ。
 
 'ファイルタイプチェック用（結局使わなかったかも）
 Public Enum FileSystemType
@@ -18,12 +19,16 @@ End Enum
 
 Public Class form1
 
-    '選択肢数(x2) 選択肢（質問）数ｘ２です （質問と飛び先フォームの数） 
+    '選択肢の元（質問数）デフォルトは４、円周率の時などは１０にする。
+    Private QMAX As Integer = 4
+
+
+
+    '選択肢数(x2) 選択肢（質問）数ｘ２です （質問と飛び先フォームの数）QMAXより自動計算 
     'Private SW_MAXx2 As Integer = 8
-    Private SW_MAXx2 As Integer = 20    'PIスペシャル：選択肢が１０あるので倍の２０必要。※それとGridもあらかじめ増やしておかないとダメ。
+    Private SW_MAXx2 As Integer = QMAX * 2
 
     Private CSV_FILE_NAME_FULL As String = ""
-
 
     'コントロール配列のフィールドを作成
     Private TextForms() As System.Windows.Forms.TextBox
@@ -41,6 +46,7 @@ Public Class form1
         Me.BtnForms = New System.Windows.Forms.Button(SW_MAXx2) {}
 
         Me.LblForms = New System.Windows.Forms.Label(SW_MAXx2 / 2) {}
+
 
 
         'コントロールのインスタンス作成し、プロパティを設定する
@@ -111,6 +117,19 @@ Public Class form1
         Me.GroupBox1.Controls.AddRange(Me.TextForms)
         Me.GroupBox1.Controls.AddRange(Me.BtnForms)
         Me.GroupBox1.Controls.AddRange(Me.LblForms)
+
+        'Form3 INIT （ここでやっちゃっていいのかしらん？）
+        Form3.TextBox_Cover.Text = System.IO.Directory.GetCurrentDirectory() + "\cover.jpg"
+
+        'Guid設定
+        Dim guidValue As Guid = Guid.NewGuid()
+        Form3.TextBox_uuid.Text = guidValue.ToString
+
+        'date：2017-01-15 の書式に合わせる
+        Dim dtNow As DateTime = DateTime.Now
+
+        ' 指定した書式で日付を文字列に変換する
+        Form3.TextBox_date.Text = dtNow.ToString("yyyy-MM-dd")
 
 
     End Sub
@@ -216,8 +235,8 @@ Public Class form1
                 End If
 
                 If (myCol + 1 > DataGridView1.ColumnCount) Then
-                    MessageBox.Show(" DataGridViewに列(col）が足りないため追加 =" & myCol.ToString)
-
+                    'MessageBox.Show(" DataGridViewに列(col）が足りないため追加 =" & myCol.ToString)
+                    Console.WriteLine(" DataGridViewに列(col）が足りないため追加 =" & myCol.ToString)
                     DataGridView1.Columns.Add("col" + myCol.ToString, "COL" + myCol.ToString)
                 End If
 
@@ -273,14 +292,26 @@ Public Class form1
                 'TextForms(1).Text = Me.DataGridView1(3, .SelectedIndex).Value
 
                 Dim i As Integer
-                For i = 2 To DataGridView1.RowCount - 2 Step 2
+                For i = 0 To SW_MAXx2 - 1
+                    TextForms(i).Text = ""
+                Next i
+
+                For i = 2 To SW_MAXx2 + 2
                     If (Me.DataGridView1(i, .SelectedIndex).Value = "") Then
                         Exit For
                     End If
                     TextForms(i - 2).Text = Me.DataGridView1(i, .SelectedIndex).Value
-                    TextForms(i - 1).Text = Me.DataGridView1(i + 1, .SelectedIndex).Value
-
                 Next i
+
+
+                '                For i = 2 To DataGridView1.RowCount - 2 Step 2
+                '               If (Me.DataGridView1(i, .SelectedIndex).Value = "") Then
+                '              Exit For
+                '         End If
+                '            TextForms(i - 2).Text = Me.DataGridView1(i, .SelectedIndex).Value
+                '           TextForms(i - 1).Text = Me.DataGridView1(i + 1, .SelectedIndex).Value
+                '
+                '           Next i
 
             End If
         End With
@@ -520,6 +551,8 @@ Public Class form1
 
     Private Sub HTMLToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles HTMLToolStripMenuItem.Click
         'MsgBox("HTML版を出力します")
+        Form3.TextBox_Info.Text = "HTML版を出力します"
+
         Dim title As String = "サンプルADV"
         Dim Path As String
         Dim PathHtml As String
@@ -554,7 +587,7 @@ Public Class form1
         End If
         Path = fbd.SelectedPath
         MsgBox(Path + "にhtmlフォルダを作成、HTML版を出力します")
-
+        Form3.TextBox_Info.Text = Path + "にhtmlフォルダを作成、HTML版を出力します"
 
 
 
@@ -577,6 +610,7 @@ Public Class form1
         VeloScene(PathHtml)
 
         If (MsgBox("HTML作成完了。" + PathHtml + "\" + ListBox1.Items(0).ToString + "をブラウザテストしますか？", vbQuestion + vbYesNo) = MsgBoxResult.Yes) Then
+            Form3.Hide()
 
             Form2.Show()
             Form2.WebBrowser1.Navigate(PathHtml + "\" + ListBox1.Items(0).ToString + ".xhtml")
@@ -645,6 +679,7 @@ Public Class form1
 
                 'タイトルをセット   
                 'ctx.Put("title", "サンプルタイトル")
+                ctx.Put("title", Form3.TextBox_Title.Text)
 
                 'コンテンツをセット
                 ctx.Put("contents", Contents)
@@ -705,13 +740,7 @@ Public Class form1
         End If
     End Sub
 
-    Private Sub Epub作成ToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles Epub作成ToolStripMenuItem.Click
-        'Epub作成（あれ、Sub以下に漢字はいってるけどいいの？　良いらしい。
-        ' MsgBox("Epubいきます")
-
-        'Epub作成フォーム
-        Form3.Show()
-
+    Public Sub EpubMake()
 
         Dim title As String = "サンプルADV"
         Dim Path As String
@@ -746,6 +775,8 @@ Public Class form1
         End If
         Path = fbd.SelectedPath
         MsgBox(Path + "にepubフォルダを作成、Epubファイル構造を出力します")
+        Form3.TextBox_Info.Text = Path + "にepubフォルダを作成、Epubファイル構造を出力します"
+        Form3.TextBox_Info.Update()
 
 
 
@@ -759,7 +790,8 @@ Public Class form1
         My.Computer.FileSystem.CopyFile(System.IO.Directory.GetCurrentDirectory() + "\container.xml", PathEPUB + "\META-INF\container.xml", True)
 
         'Cover
-        My.Computer.FileSystem.CopyFile(System.IO.Directory.GetCurrentDirectory() + "\cover.jpg", PathEPUB + "\OEBPS\Images\cover.jpg", True)
+        'My.Computer.FileSystem.CopyFile(System.IO.Directory.GetCurrentDirectory() + "\cover.jpg", PathEPUB + "\OEBPS\Images\cover.jpg", True)
+        My.Computer.FileSystem.CopyFile(Form3.TextBox_Cover.Text, PathEPUB + "\OEBPS\Images\cover.jpg", True)
 
         'スタイルシートコピー(ディレクトリが無くても強制的に作成）
         My.Computer.FileSystem.CopyFile(System.IO.Directory.GetCurrentDirectory() + "\styles_epub_rtl.css", PathEPUB + "\OEBPS\styles\styles_epub_rtl.css", True)
@@ -788,7 +820,8 @@ Public Class form1
 
 
 
-        MsgBox(PathEPUB + ".epubファイルを作成します")
+        Form3.TextBox_Info.Text = PathEPUB + ".epubファイルを作成します"
+        Form3.TextBox_Info.Update()
 
         'ZIP書庫を作成
         'mimetypeだけを無圧縮でまず保存 ー＞やってみたがNG　なぜ？
@@ -818,6 +851,7 @@ Public Class form1
             'ListBox1に結果を表示する
             'ListBox2.Items.AddRange(files)
 
+            'これに時間かかるけれどゲージ変化させにくいので今はやめとく
             GetAllFilesAndArcive(PathEPUB + "\OEBPS", "*.*", files, a, PathEPUB + "\OEBPS")
             'ListBox2.Items.AddRange(files.ToArray())
         End Using
@@ -827,6 +861,21 @@ Public Class form1
         '        System.IO.Compression.ZipFile.CreateFromDirectory(PathEPUB, PathEPUB + ".zip", System.IO.Compression.CompressionLevel.NoCompression, False, System.Text.Encoding.GetEncoding("UTF-8"))
 
         MsgBox(PathEPUB + ".epubファイルを作成完了。" + vbCrLf + vbCrLf + "※現状このファイルはKindlePreviewer用です。他の環境用にはePubPack等を利用してパックしなおしてください。")
+
+        Form3.Hide()
+        Form3.Button2.Enabled = False
+
+
+    End Sub
+
+    Private Sub Epub作成ToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles Epub作成ToolStripMenuItem.Click
+        'Epub作成（あれ、Sub以下に漢字はいってるけどいいの？　良いらしい。
+        ' MsgBox("Epubいきます")
+
+        'Epub作成フォーム
+        Form3.Show()
+        Form3.Button2.Enabled = True
+
 
 
     End Sub
@@ -871,6 +920,9 @@ Public Class form1
                 dpm = Path.GetDirectoryName(d0).Substring(Path.GetDirectoryName(EntryPath).Length)
 
                 Console.WriteLine("親ディレクトリ名: " + dpm)
+                Form3.TextBox_Info.Text = "Zip CreateEntryFromFile:" + dpm
+                Form3.TextBox_Info.Update()
+
                 arc.CreateEntryFromFile(d0, dpm.Substring(1) + "\" + Path.GetFileName(d0), CompressionLevel.NoCompression)
 
             End If
@@ -890,6 +942,9 @@ Public Class form1
             dpm = Path.GetDirectoryName(d).Substring(Path.GetDirectoryName(EntryPath).Length)
             Console.WriteLine("ArcFolderDpm: " + dpm.Substring(1))
             Console.WriteLine("CreateEntry: " + dpm.Substring(1) + "\" + Path.GetFileName(d) + "\")
+
+            Form3.TextBox_Info.Text = "Zip CreateEntry:" + dpm
+            Form3.TextBox_Info.Update()
 
             arc.CreateEntry(dpm.Substring(1) + "\" + Path.GetFileName(d) + "\")
             GetAllFilesAndArcive(d, searchPattern, files, arc, EntryPath)
@@ -916,16 +971,20 @@ Public Class form1
             'スタイルシートをセット
             ctx.Put("style", "../styles/styles_epub_rtl.css")
 
-            'このあたりユーザーに入力させなきゃ・・・
             'タイトルをセット   
-            ctx.Put("title", "ザ・アドベンチャー")
+            'ctx.Put("title", "ザ・アドベンチャー")
+            ctx.Put("title", Form3.TextBox_Title.Text)
             '著者をセット   
-            ctx.Put("creator", "著者")
+            ctx.Put("creator", Form3.TextBox_Author.Text)
             '出版をセット   
-            ctx.Put("publisher", "RasenWorks")
+            ctx.Put("publisher", Form3.TextBox_Publisher.Text)
 
-            'uuid：ダミー！ あとで自動生成すること！
-            ctx.Put("uuid", "1268e311-af06-411f-bb5f-187be54ccbaa")
+            '日付Form3.TextBox_date.Text
+            ctx.Put("date", Form3.TextBox_date.Text)
+
+            'uuid
+            'ctx.Put("uuid", "1268e311-af06-411f-bb5f-187be54ccbaa")
+            ctx.Put("uuid", Form3.TextBox_uuid.Text)
 
             'Listセット
             Dim list As ArrayList = New ArrayList
@@ -996,9 +1055,11 @@ Public Class form1
 
             'タイトルをセット   
             'ctx.Put("title", "サンプルタイトル")
+            ctx.Put("title", Form3.TextBox_Title.Text)
 
             'uuid
-            ctx.Put("uuid", "1268e311-af06-411f-bb5f-187be54ccbaa")
+            'ctx.Put("uuid", "1268e311-af06-411f-bb5f-187be54ccbaa")
+            ctx.Put("uuid", Form3.TextBox_uuid.Text)
 
             'シーンセット
             ctx.Put("scn", ListBox1.Items(0).ToString)

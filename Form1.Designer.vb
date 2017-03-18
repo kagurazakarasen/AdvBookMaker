@@ -56,6 +56,7 @@ Partial Class form1
         Me.Column8 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column9 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column10 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column11 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.MenuStrip1.SuspendLayout()
         Me.TabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
@@ -240,7 +241,7 @@ Partial Class form1
         'DataGridView1
         '
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column1, Me.Column2, Me.Column3, Me.Column4, Me.Column5, Me.Column6, Me.Column7, Me.Column8, Me.Column9, Me.Column10})
+        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column1, Me.Column2, Me.Column3, Me.Column4, Me.Column5, Me.Column6, Me.Column7, Me.Column8, Me.Column9, Me.Column10, Me.Column11})
         Me.DataGridView1.Location = New System.Drawing.Point(6, 6)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.RowTemplate.Height = 21
@@ -320,6 +321,11 @@ Partial Class form1
         Me.Column10.Name = "Column10"
         Me.Column10.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
         '
+        'Column11
+        '
+        Me.Column11.HeaderText = "tmp"
+        Me.Column11.Name = "Column11"
+        '
         'form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
@@ -389,4 +395,5 @@ Partial Class form1
     Friend WithEvents Column8 As DataGridViewTextBoxColumn
     Friend WithEvents Column9 As DataGridViewTextBoxColumn
     Friend WithEvents Column10 As DataGridViewTextBoxColumn
+    Friend WithEvents Column11 As DataGridViewTextBoxColumn
 End Class

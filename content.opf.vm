@@ -10,7 +10,7 @@
     <dc:title>$!title</dc:title>
     <dc:creator id="creator">$!creator</dc:creator>
     <dc:publisher>$!publisher</dc:publisher>
-    <dc:date>2017-01-15</dc:date>
+    <dc:date>$!date</dc:date>
   </metadata>
   <manifest>
     <meta name="cover" content="cover-image" />
