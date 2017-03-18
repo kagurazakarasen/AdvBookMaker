@@ -215,10 +215,12 @@ Public Class form1
                     Me.ListBox1.Items.Add(currentColumn)
                 End If
 
-                If (myCol > SW_MAXx2 + 2) Then
-                    MessageBox.Show(" ColumnsOver =" & myCol.ToString)
-                    'ここでcol追加いれること
+                If (myCol + 1 > DataGridView1.ColumnCount) Then
+                    MessageBox.Show(" DataGridViewに列(col）が足りないため追加 =" & myCol.ToString)
+
+                    DataGridView1.Columns.Add("col" + myCol.ToString, "COL" + myCol.ToString)
                 End If
+
                 Me.DataGridView1(myCol, myRow).Value = currentColumn
                 myCol += 1
             Next    ' --▲ 列ループ
@@ -589,25 +591,8 @@ Public Class form1
         Dim SceneFN As String
         Dim Contents As String
 
-        '質問用、配列にしたかったけれど NVelocity が未対応？ （対応してる？）
-        Dim q0 As String, q1 As String, q2 As String, q3 As String
-        Dim q4 As String, q5 As String, q6 As String, q7 As String
-
-        'Piスペシャル用
-        Dim q8 As String
-        Dim q9 As String
-        Dim q10 As String
-        Dim q11 As String
-        Dim q12 As String
-        Dim q13 As String
-        Dim q14 As String
-        Dim q15 As String
-        Dim q16 As String
-        Dim q17 As String
-        Dim q18 As String
-        Dim q19 As String
-        Dim q20 As String
-
+        '質問用配列
+        Dim qes(SW_MAXx2) As String
 
         'Epub作成フォーム
         Form3.Show()
@@ -637,100 +622,16 @@ Public Class form1
                 Console.WriteLine(DataGridView1.CurrentCell.Value)
             Next c
 
-            'このあたり格好悪いなー。配列で処理し直し予定
-            q0 = ""
-            q1 = ""
-            q2 = ""
-            q3 = ""
-            q4 = ""
-            q5 = ""
-            q6 = ""
-            q7 = ""
-
-            'Piスペシャル用
-            q8 = ""
-            q9 = ""
-            q10 = ""
-            q11 = ""
-            q12 = ""
-            q13 = ""
-            q14 = ""
-            q15 = ""
-            q16 = ""
-            q17 = ""
-            q18 = ""
-            q19 = ""
-            q20 = ""
-
 
             '質問と飛び先
-            DataGridView1.CurrentCell = DataGridView1(2, r)
-            If (DataGridView1.CurrentCell.Value <> "") Then q0 = DataGridView1.CurrentCell.Value.ToString
-
-            DataGridView1.CurrentCell = DataGridView1(3, r)
-            If (DataGridView1.CurrentCell.Value <> "") Then q1 = DataGridView1.CurrentCell.Value.ToString
-
-            DataGridView1.CurrentCell = DataGridView1(4, r)
-            If (DataGridView1.CurrentCell.Value <> "") Then q2 = DataGridView1.CurrentCell.Value.ToString
-
-            DataGridView1.CurrentCell = DataGridView1(5, r)
-            If (DataGridView1.CurrentCell.Value <> "") Then q3 = DataGridView1.CurrentCell.Value.ToString
-
-
-            DataGridView1.CurrentCell = DataGridView1(6, r)
-            If (DataGridView1.CurrentCell.Value <> "") Then q4 = DataGridView1.CurrentCell.Value.ToString
-            DataGridView1.CurrentCell = DataGridView1(7, r)
-            If (DataGridView1.CurrentCell.Value <> "") Then q5 = DataGridView1.CurrentCell.Value.ToString
-            DataGridView1.CurrentCell = DataGridView1(8, r)
-            If (DataGridView1.CurrentCell.Value <> "") Then q6 = DataGridView1.CurrentCell.Value.ToString
-            DataGridView1.CurrentCell = DataGridView1(9, r)
-            If (DataGridView1.CurrentCell.Value <> "") Then q7 = DataGridView1.CurrentCell.Value.ToString
-
-
-            'Piスペシャル用
-            DataGridView1.CurrentCell = DataGridView1(10, r)
-            If (DataGridView1.CurrentCell.Value <> "") Then q8 = DataGridView1.CurrentCell.Value.ToString
-            DataGridView1.CurrentCell = DataGridView1(11, r)
-            If (DataGridView1.CurrentCell.Value <> "") Then q9 = DataGridView1.CurrentCell.Value.ToString
-            DataGridView1.CurrentCell = DataGridView1(12, r)
-            If (DataGridView1.CurrentCell.Value <> "") Then q10 = DataGridView1.CurrentCell.Value.ToString
-
-
-
-
-            DataGridView1.CurrentCell = DataGridView1(13, r)
-            If (DataGridView1.CurrentCell.Value <> "") Then q11 = DataGridView1.CurrentCell.Value.ToString
-
-            DataGridView1.CurrentCell = DataGridView1(14, r)
-            If (DataGridView1.CurrentCell.Value <> "") Then q12 = DataGridView1.CurrentCell.Value.ToString
-
-            DataGridView1.CurrentCell = DataGridView1(15, r)
-            If (DataGridView1.CurrentCell.Value <> "") Then q13 = DataGridView1.CurrentCell.Value.ToString
-
-
-            DataGridView1.CurrentCell = DataGridView1(16, r)
-            If (DataGridView1.CurrentCell.Value <> "") Then q14 = DataGridView1.CurrentCell.Value.ToString
-            DataGridView1.CurrentCell = DataGridView1(17, r)
-            If (DataGridView1.CurrentCell.Value <> "") Then q15 = DataGridView1.CurrentCell.Value.ToString
-            DataGridView1.CurrentCell = DataGridView1(18, r)
-            If (DataGridView1.CurrentCell.Value <> "") Then q16 = DataGridView1.CurrentCell.Value.ToString
-            DataGridView1.CurrentCell = DataGridView1(19, r)
-            If (DataGridView1.CurrentCell.Value <> "") Then q17 = DataGridView1.CurrentCell.Value.ToString
-
-            DataGridView1.CurrentCell = DataGridView1(20, r)
-            If (DataGridView1.CurrentCell.Value <> "") Then q18 = DataGridView1.CurrentCell.Value.ToString
-            DataGridView1.CurrentCell = DataGridView1(21, r)
-            If (DataGridView1.CurrentCell.Value <> "") Then q19 = DataGridView1.CurrentCell.Value.ToString
-            DataGridView1.CurrentCell = DataGridView1(22, r)
-            If (DataGridView1.CurrentCell.Value <> "") Then q20 = DataGridView1.CurrentCell.Value.ToString
-
-
-
+            For i = 0 To SW_MAXx2
+                qes(i) = ""
+                DataGridView1.CurrentCell = DataGridView1(i + 2, r)
+                If (DataGridView1.CurrentCell.Value <> "") Then qes(i) = DataGridView1.CurrentCell.Value.ToString
+            Next i
 
 
             Try
-
-
                 'NVelocityの初期化
                 Velocity.Init()
                 'プロパティファイルの指定も可能（実行フォルダのNVelocity.propertiesがデフォルト）
@@ -748,72 +649,52 @@ Public Class form1
                 'コンテンツをセット
                 ctx.Put("contents", Contents)
 
-                ctx.Put("q0", q0)
-                ctx.Put("q1", q1)
-                ctx.Put("q2", q2)
-                ctx.Put("q3", q3)
+                For i = 0 To SW_MAXx2
+                    ctx.Put("q" + i.ToString, qes(i))
+                Next i
 
-                ctx.Put("q4", q4)
-                ctx.Put("q5", q5)
-                ctx.Put("q6", q6)
-                ctx.Put("q7", q7)
-
-                'Piスペシャル用
-                ctx.Put("q8", q8)
-                ctx.Put("q9", q9)
-                ctx.Put("q10", q10)
-                ctx.Put("q11", q11)
-                ctx.Put("q12", q12)
-                ctx.Put("q13", q13)
-                ctx.Put("q14", q14)
-                ctx.Put("q15", q15)
-                ctx.Put("q16", q16)
-                ctx.Put("q17", q17)
-                ctx.Put("q18", q18)
-                ctx.Put("q19", q19)
-                ctx.Put("q20", q20)
-
+                '
                 Try
 
-                    '結果を格納するStringWriter
-                    Dim resultWriter As System.IO.StringWriter = New System.IO.StringWriter
-                    'テンプレートファイルを読み込み、コンテキストとマージ
-                    'Velocity.MergeTemplate("../SceneXhtml.vm", "UTF-8", ctx, resultWriter)
-                    Velocity.MergeTemplate("SceneXhtml.vm", "UTF-8", ctx, resultWriter)
-                    '初期設定ファイルでデフォルトエンコーディング設定時は省略可
-                    'Velocity.MergeTemplate("../mail.vm", ctx, resultWriter) 
-                    '結果を画面に表示
-                    'Me.TextBox_MainEditer.Text = resultWriter.GetStringBuilder().ToString()
+                        '結果を格納するStringWriter
+                        Dim resultWriter As System.IO.StringWriter = New System.IO.StringWriter
+                        'テンプレートファイルを読み込み、コンテキストとマージ
+                        'Velocity.MergeTemplate("../SceneXhtml.vm", "UTF-8", ctx, resultWriter)
+                        Velocity.MergeTemplate("SceneXhtml.vm", "UTF-8", ctx, resultWriter)
+                        '初期設定ファイルでデフォルトエンコーディング設定時は省略可
+                        'Velocity.MergeTemplate("../mail.vm", ctx, resultWriter) 
+                        '結果を画面に表示
+                        'Me.TextBox_MainEditer.Text = resultWriter.GetStringBuilder().ToString()
 
-                    '書き込み
-                    Dim fileName As String = path + "\" + SceneFN + ".xhtml"
-                    'Dim textToAdd As String = resultWriter.GetStringBuilder().ToString()
-                    'Dim fs As FileStream = Nothing
-
-
-                    'ファイルが存在しているときは、上書きする 
-                    System.IO.File.WriteAllText(fileName, resultWriter.GetStringBuilder().ToString(), System.Text.Encoding.GetEncoding("UTF-8"))
+                        '書き込み
+                        Dim fileName As String = path + "\" + SceneFN + ".xhtml"
+                        'Dim textToAdd As String = resultWriter.GetStringBuilder().ToString()
+                        'Dim fs As FileStream = Nothing
 
 
+                        'ファイルが存在しているときは、上書きする 
+                        System.IO.File.WriteAllText(fileName, resultWriter.GetStringBuilder().ToString(), System.Text.Encoding.GetEncoding("UTF-8"))
 
-                Catch ex As ResourceNotFoundException
 
-                    MessageBox.Show("テンプレートファイルが見つかりませんでした", "エラー", MessageBoxButtons.OK, MessageBoxIcon.Warning)
-                    Console.WriteLine("■テンプレートファイルが見つかりませんでした\n\n" + ex.ToString())
 
-                Catch ex As ParseErrorException
+                    Catch ex As ResourceNotFoundException
 
-                    MessageBox.Show("テンプレートの解析時にエラーが発生しました", "エラー", MessageBoxButtons.OK, MessageBoxIcon.Warning)
-                    Console.WriteLine("■テンプレートの解析時にエラーが発生しました\n\n" + ex.ToString())
+                        MessageBox.Show("テンプレートファイルが見つかりませんでした", "エラー", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+                        Console.WriteLine("■テンプレートファイルが見つかりませんでした\n\n" + ex.ToString())
 
+                    Catch ex As ParseErrorException
+
+                        MessageBox.Show("テンプレートの解析時にエラーが発生しました", "エラー", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+                        Console.WriteLine("■テンプレートの解析時にエラーが発生しました\n\n" + ex.ToString())
+
+                    End Try
+
+                Catch ex As System.Exception
+                    MessageBox.Show("その他のエラーが発生しました", "エラー", MessageBoxButtons.OK, MessageBoxIcon.Stop)
+                    Console.WriteLine("■その他のエラーが発生しました\n\n" + ex.ToString())
                 End Try
 
-            Catch ex As System.Exception
-                MessageBox.Show("その他のエラーが発生しました", "エラー", MessageBoxButtons.OK, MessageBoxIcon.Stop)
-                Console.WriteLine("■その他のエラーが発生しました\n\n" + ex.ToString())
-            End Try
-
-        Next r
+            Next r
 
 
     End Sub

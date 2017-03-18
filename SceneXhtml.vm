@@ -26,10 +26,10 @@ $contents
 <br/><br/><br/>
 </p>
 
--------------------------------
+<hr>
 
 <p>
-<br/><br/><br/>
+<br/><br/>
 </p>
 
 #if ($q0)
@@ -56,12 +56,53 @@ $contents
 </p>
 #end
 
+#if ($q8)
+<p>
+<a href="${q9}.xhtml">${q8}</a>
+</p>
+#end
+
+#if ($q10)
+<p>
+<a href="${q11}.xhtml">${q10}</a>
+</p>
+#end
+
+#if ($q12)
+<p>
+<a href="${q13}.xhtml">${q12}</a>
+</p>
+#end
+
+#if ($q14)
+<p>
+<a href="${q15}.xhtml">${q14}</a>
+</p>
+#end
+
+#if ($q16)
+<p>
+<a href="${q17}.xhtml">${q16}</a>
+</p>
+#end
+
+#if ($q18)
+<p>
+<a href="${q19}.xhtml">${q18}</a>
+</p>
+#end
+
+#if ($q20)
+<p>
+<a href="${q21}.xhtml">${q20}</a>
+</p>
+#end
 
 <p>
-<br/><br/><br/>
+<br/><br/>
 </p>
 
--------------------------------
+<hr>
 
 </body>
 </html>
