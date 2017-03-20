@@ -197,7 +197,7 @@ Partial Class form1
         Me.ListBox1.ItemHeight = 12
         Me.ListBox1.Location = New System.Drawing.Point(477, 35)
         Me.ListBox1.Name = "ListBox1"
-        Me.ListBox1.Size = New System.Drawing.Size(117, 424)
+        Me.ListBox1.Size = New System.Drawing.Size(135, 448)
         Me.ListBox1.TabIndex = 4
         '
         'TextBox_MainEditer
@@ -229,7 +229,7 @@ Partial Class form1
         Me.GroupBox1.Controls.Add(Me.Label1)
         Me.GroupBox1.Location = New System.Drawing.Point(12, 310)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(450, 147)
+        Me.GroupBox1.Size = New System.Drawing.Size(450, 173)
         Me.GroupBox1.TabIndex = 3
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "選択肢"
@@ -258,7 +258,7 @@ Partial Class form1
         Me.TabPage2.Location = New System.Drawing.Point(4, 22)
         Me.TabPage2.Name = "TabPage2"
         Me.TabPage2.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage2.Size = New System.Drawing.Size(597, 496)
+        Me.TabPage2.Size = New System.Drawing.Size(618, 494)
         Me.TabPage2.TabIndex = 1
         Me.TabPage2.Text = "Grid"
         Me.TabPage2.UseVisualStyleBackColor = True
@@ -345,6 +345,7 @@ Partial Class form1
         Me.ClientSize = New System.Drawing.Size(632, 562)
         Me.Controls.Add(Me.GroupBox_Tab)
         Me.Controls.Add(Me.MenuStrip1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MainMenuStrip = Me.MenuStrip1
         Me.Name = "form1"

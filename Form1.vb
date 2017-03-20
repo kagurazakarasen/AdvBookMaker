@@ -1110,7 +1110,11 @@ Public Class form1
 
     End Sub
 
-
+    Private Sub TextBox_Scene_TextChanged_1(sender As Object, e As EventArgs) Handles TextBox_Scene.TextChanged
+        If (Me.Text <> "") Then
+            TextBox_MainEditer.Enabled = True
+        End If
+    End Sub
 End Class
 
 'memo アイコン使用イラストーいらすとや：http://www.irasutoya.com/2016/05/blog-post_74.html
