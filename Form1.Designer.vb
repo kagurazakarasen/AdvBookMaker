@@ -57,6 +57,8 @@ Partial Class form1
         Me.Column9 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column10 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column11 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
+        Me.Label_ver = New System.Windows.Forms.Label()
         Me.MenuStrip1.SuspendLayout()
         Me.GroupBox_Tab.SuspendLayout()
         Me.TabControl1.SuspendLayout()
@@ -337,6 +339,19 @@ Partial Class form1
         '
         Me.Column11.HeaderText = "tmp"
         Me.Column11.Name = "Column11"
+        '
+        'OpenFileDialog1
+        '
+        Me.OpenFileDialog1.FileName = "OpenFileDialog1"
+        '
+        'Label_ver
+        '
+        Me.Label_ver.AutoSize = True
+        Me.Label_ver.Location = New System.Drawing.Point(464, 522)
+        Me.Label_ver.Name = "Label_ver"
+        Me.Label_ver.Size = New System.Drawing.Size(44, 12)
+        Me.Label_ver.TabIndex = 15
+        Me.Label_ver.Text = "Version"
         '
         'form1
         '
