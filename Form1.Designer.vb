@@ -44,8 +44,6 @@ Partial Class form1
         Me.Label1 = New System.Windows.Forms.Label()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
-        Me.Label_ver = New System.Windows.Forms.Label()
         Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -57,6 +55,8 @@ Partial Class form1
         Me.Column9 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column10 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column11 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
+        Me.Label_ver = New System.Windows.Forms.Label()
         Me.MenuStrip1.SuspendLayout()
         Me.TabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
@@ -248,19 +248,6 @@ Partial Class form1
         Me.DataGridView1.Size = New System.Drawing.Size(567, 454)
         Me.DataGridView1.TabIndex = 0
         '
-        'OpenFileDialog1
-        '
-        Me.OpenFileDialog1.FileName = "OpenFileDialog1"
-        '
-        'Label_ver
-        '
-        Me.Label_ver.AutoSize = True
-        Me.Label_ver.Location = New System.Drawing.Point(464, 522)
-        Me.Label_ver.Name = "Label_ver"
-        Me.Label_ver.Size = New System.Drawing.Size(44, 12)
-        Me.Label_ver.TabIndex = 15
-        Me.Label_ver.Text = "Version"
-        '
         'Column1
         '
         Me.Column1.HeaderText = "シーン"
@@ -326,6 +313,19 @@ Partial Class form1
         Me.Column11.HeaderText = "tmp"
         Me.Column11.Name = "Column11"
         '
+        'OpenFileDialog1
+        '
+        Me.OpenFileDialog1.FileName = "OpenFileDialog1"
+        '
+        'Label_ver
+        '
+        Me.Label_ver.AutoSize = True
+        Me.Label_ver.Location = New System.Drawing.Point(464, 522)
+        Me.Label_ver.Name = "Label_ver"
+        Me.Label_ver.Size = New System.Drawing.Size(44, 12)
+        Me.Label_ver.TabIndex = 15
+        Me.Label_ver.Text = "Version"
+        '
         'form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
@@ -334,6 +334,7 @@ Partial Class form1
         Me.Controls.Add(Me.Label_ver)
         Me.Controls.Add(Me.TabControl1)
         Me.Controls.Add(Me.MenuStrip1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MainMenuStrip = Me.MenuStrip1
         Me.Name = "form1"

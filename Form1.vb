@@ -691,45 +691,45 @@ Public Class form1
                 '
                 Try
 
-                        '結果を格納するStringWriter
-                        Dim resultWriter As System.IO.StringWriter = New System.IO.StringWriter
-                        'テンプレートファイルを読み込み、コンテキストとマージ
-                        'Velocity.MergeTemplate("../SceneXhtml.vm", "UTF-8", ctx, resultWriter)
-                        Velocity.MergeTemplate("SceneXhtml.vm", "UTF-8", ctx, resultWriter)
-                        '初期設定ファイルでデフォルトエンコーディング設定時は省略可
-                        'Velocity.MergeTemplate("../mail.vm", ctx, resultWriter) 
-                        '結果を画面に表示
-                        'Me.TextBox_MainEditer.Text = resultWriter.GetStringBuilder().ToString()
+                    '結果を格納するStringWriter
+                    Dim resultWriter As System.IO.StringWriter = New System.IO.StringWriter
+                    'テンプレートファイルを読み込み、コンテキストとマージ
+                    'Velocity.MergeTemplate("../SceneXhtml.vm", "UTF-8", ctx, resultWriter)
+                    Velocity.MergeTemplate("SceneXhtml.vm", "UTF-8", ctx, resultWriter)
+                    '初期設定ファイルでデフォルトエンコーディング設定時は省略可
+                    'Velocity.MergeTemplate("../mail.vm", ctx, resultWriter) 
+                    '結果を画面に表示
+                    'Me.TextBox_MainEditer.Text = resultWriter.GetStringBuilder().ToString()
 
-                        '書き込み
-                        Dim fileName As String = path + "\" + SceneFN + ".xhtml"
-                        'Dim textToAdd As String = resultWriter.GetStringBuilder().ToString()
-                        'Dim fs As FileStream = Nothing
-
-
-                        'ファイルが存在しているときは、上書きする 
-                        System.IO.File.WriteAllText(fileName, resultWriter.GetStringBuilder().ToString(), System.Text.Encoding.GetEncoding("UTF-8"))
+                    '書き込み
+                    Dim fileName As String = path + "\" + SceneFN + ".xhtml"
+                    'Dim textToAdd As String = resultWriter.GetStringBuilder().ToString()
+                    'Dim fs As FileStream = Nothing
 
 
+                    'ファイルが存在しているときは、上書きする 
+                    System.IO.File.WriteAllText(fileName, resultWriter.GetStringBuilder().ToString(), System.Text.Encoding.GetEncoding("UTF-8"))
 
-                    Catch ex As ResourceNotFoundException
 
-                        MessageBox.Show("テンプレートファイルが見つかりませんでした", "エラー", MessageBoxButtons.OK, MessageBoxIcon.Warning)
-                        Console.WriteLine("■テンプレートファイルが見つかりませんでした\n\n" + ex.ToString())
 
-                    Catch ex As ParseErrorException
+                Catch ex As ResourceNotFoundException
 
-                        MessageBox.Show("テンプレートの解析時にエラーが発生しました", "エラー", MessageBoxButtons.OK, MessageBoxIcon.Warning)
-                        Console.WriteLine("■テンプレートの解析時にエラーが発生しました\n\n" + ex.ToString())
+                    MessageBox.Show("テンプレートファイルが見つかりませんでした", "エラー", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+                    Console.WriteLine("■テンプレートファイルが見つかりませんでした\n\n" + ex.ToString())
 
-                    End Try
+                Catch ex As ParseErrorException
 
-                Catch ex As System.Exception
-                    MessageBox.Show("その他のエラーが発生しました", "エラー", MessageBoxButtons.OK, MessageBoxIcon.Stop)
-                    Console.WriteLine("■その他のエラーが発生しました\n\n" + ex.ToString())
+                    MessageBox.Show("テンプレートの解析時にエラーが発生しました", "エラー", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+                    Console.WriteLine("■テンプレートの解析時にエラーが発生しました\n\n" + ex.ToString())
+
                 End Try
 
-            Next r
+            Catch ex As System.Exception
+                MessageBox.Show("その他のエラーが発生しました", "エラー", MessageBoxButtons.OK, MessageBoxIcon.Stop)
+                Console.WriteLine("■その他のエラーが発生しました\n\n" + ex.ToString())
+            End Try
+
+        Next r
 
 
     End Sub
