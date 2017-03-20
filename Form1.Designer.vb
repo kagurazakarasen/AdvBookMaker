@@ -58,7 +58,7 @@ Partial Class form1
         Me.Column10 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column11 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
-        Me.Label_ver = New System.Windows.Forms.Label()
+        '        Me.Label_ver = New System.Windows.Forms.Label()
         Me.MenuStrip1.SuspendLayout()
         Me.GroupBox_Tab.SuspendLayout()
         Me.TabControl1.SuspendLayout()
