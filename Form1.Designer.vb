@@ -31,8 +31,6 @@ Partial Class form1
         Me.PublishToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.HTMLToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Epub作成ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
-        Me.GroupBox_Tab = New System.Windows.Forms.GroupBox()
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
         Me.TextBox_Scene = New System.Windows.Forms.TextBox()
@@ -58,9 +56,8 @@ Partial Class form1
         Me.Column10 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column11 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
-        '        Me.Label_ver = New System.Windows.Forms.Label()
+        Me.Label_ver = New System.Windows.Forms.Label()
         Me.MenuStrip1.SuspendLayout()
-        Me.GroupBox_Tab.SuspendLayout()
         Me.TabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
@@ -73,7 +70,7 @@ Partial Class form1
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileToolStripMenuItem, Me.PublishToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(632, 24)
+        Me.MenuStrip1.Size = New System.Drawing.Size(605, 24)
         Me.MenuStrip1.TabIndex = 13
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -121,31 +118,15 @@ Partial Class form1
         Me.Epub作成ToolStripMenuItem.Size = New System.Drawing.Size(160, 22)
         Me.Epub作成ToolStripMenuItem.Text = "Epub作成"
         '
-        'OpenFileDialog1
-        '
-        Me.OpenFileDialog1.FileName = "OpenFileDialog1"
-        '
-        'GroupBox_Tab
-        '
-        Me.GroupBox_Tab.AutoSize = True
-        Me.GroupBox_Tab.Controls.Add(Me.TabControl1)
-        Me.GroupBox_Tab.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.GroupBox_Tab.Location = New System.Drawing.Point(0, 24)
-        Me.GroupBox_Tab.Name = "GroupBox_Tab"
-        Me.GroupBox_Tab.Size = New System.Drawing.Size(632, 538)
-        Me.GroupBox_Tab.TabIndex = 15
-        Me.GroupBox_Tab.TabStop = False
-        '
         'TabControl1
         '
         Me.TabControl1.Controls.Add(Me.TabPage1)
         Me.TabControl1.Controls.Add(Me.TabPage2)
-        Me.TabControl1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TabControl1.Location = New System.Drawing.Point(3, 15)
+        Me.TabControl1.Location = New System.Drawing.Point(12, 27)
         Me.TabControl1.Name = "TabControl1"
         Me.TabControl1.SelectedIndex = 0
-        Me.TabControl1.Size = New System.Drawing.Size(626, 520)
-        Me.TabControl1.TabIndex = 15
+        Me.TabControl1.Size = New System.Drawing.Size(587, 492)
+        Me.TabControl1.TabIndex = 14
         '
         'TabPage1
         '
@@ -159,7 +140,7 @@ Partial Class form1
         Me.TabPage1.Location = New System.Drawing.Point(4, 22)
         Me.TabPage1.Name = "TabPage1"
         Me.TabPage1.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage1.Size = New System.Drawing.Size(618, 494)
+        Me.TabPage1.Size = New System.Drawing.Size(579, 466)
         Me.TabPage1.TabIndex = 0
         Me.TabPage1.Text = "Main"
         Me.TabPage1.UseVisualStyleBackColor = True
@@ -173,8 +154,7 @@ Partial Class form1
         '
         'Button_SetToGrid
         '
-        Me.Button_SetToGrid.Anchor = System.Windows.Forms.AnchorStyles.Right
-        Me.Button_SetToGrid.Location = New System.Drawing.Point(366, 281)
+        Me.Button_SetToGrid.Location = New System.Drawing.Point(346, 281)
         Me.Button_SetToGrid.Name = "Button_SetToGrid"
         Me.Button_SetToGrid.Size = New System.Drawing.Size(96, 23)
         Me.Button_SetToGrid.TabIndex = 5
@@ -183,9 +163,8 @@ Partial Class form1
         '
         'Label2
         '
-        Me.Label2.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(463, 17)
+        Me.Label2.Location = New System.Drawing.Point(448, 17)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(55, 12)
         Me.Label2.TabIndex = 16
@@ -193,25 +172,21 @@ Partial Class form1
         '
         'ListBox1
         '
-        Me.ListBox1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.ListBox1.FormattingEnabled = True
         Me.ListBox1.ItemHeight = 12
-        Me.ListBox1.Location = New System.Drawing.Point(477, 35)
+        Me.ListBox1.Location = New System.Drawing.Point(448, 35)
         Me.ListBox1.Name = "ListBox1"
-        Me.ListBox1.Size = New System.Drawing.Size(135, 448)
+        Me.ListBox1.Size = New System.Drawing.Size(117, 424)
         Me.ListBox1.TabIndex = 4
         '
         'TextBox_MainEditer
         '
-        Me.TextBox_MainEditer.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.TextBox_MainEditer.Enabled = False
         Me.TextBox_MainEditer.Location = New System.Drawing.Point(11, 36)
         Me.TextBox_MainEditer.Multiline = True
         Me.TextBox_MainEditer.Name = "TextBox_MainEditer"
         Me.TextBox_MainEditer.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
-        Me.TextBox_MainEditer.Size = New System.Drawing.Size(460, 239)
+        Me.TextBox_MainEditer.Size = New System.Drawing.Size(431, 239)
         Me.TextBox_MainEditer.TabIndex = 2
         '
         'Lbl_EditFileName
@@ -225,13 +200,11 @@ Partial Class form1
         '
         'GroupBox1
         '
-        Me.GroupBox1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.GroupBox1.Controls.Add(Me.Label3)
         Me.GroupBox1.Controls.Add(Me.Label1)
         Me.GroupBox1.Location = New System.Drawing.Point(12, 310)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(450, 173)
+        Me.GroupBox1.Size = New System.Drawing.Size(430, 147)
         Me.GroupBox1.TabIndex = 3
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "選択肢"
@@ -260,7 +233,7 @@ Partial Class form1
         Me.TabPage2.Location = New System.Drawing.Point(4, 22)
         Me.TabPage2.Name = "TabPage2"
         Me.TabPage2.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage2.Size = New System.Drawing.Size(618, 494)
+        Me.TabPage2.Size = New System.Drawing.Size(579, 466)
         Me.TabPage2.TabIndex = 1
         Me.TabPage2.Text = "Grid"
         Me.TabPage2.UseVisualStyleBackColor = True
@@ -357,8 +330,9 @@ Partial Class form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(632, 562)
-        Me.Controls.Add(Me.GroupBox_Tab)
+        Me.ClientSize = New System.Drawing.Size(605, 546)
+        Me.Controls.Add(Me.Label_ver)
+        Me.Controls.Add(Me.TabControl1)
         Me.Controls.Add(Me.MenuStrip1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
@@ -367,7 +341,6 @@ Partial Class form1
         Me.Text = "AdventureGameBook Maker"
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
-        Me.GroupBox_Tab.ResumeLayout(False)
         Me.TabControl1.ResumeLayout(False)
         Me.TabPage1.ResumeLayout(False)
         Me.TabPage1.PerformLayout()
@@ -385,6 +358,18 @@ Partial Class form1
     Friend WithEvents OpenToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents SaveToolStripMenuItem As ToolStripMenuItem
 
+
+
+    Friend WithEvents TabControl1 As TabControl
+    Friend WithEvents TabPage1 As TabPage
+    Friend WithEvents TabPage2 As TabPage
+    Friend WithEvents Label2 As Label
+    Friend WithEvents ListBox1 As ListBox
+    Friend WithEvents TextBox_MainEditer As TextBox
+    Friend WithEvents Lbl_EditFileName As Label
+    Friend WithEvents GroupBox1 As GroupBox
+    Friend WithEvents DataGridView1 As DataGridView
+
     Private Sub DataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellContentClick
 
     End Sub
@@ -392,24 +377,15 @@ Partial Class form1
     Private Sub ListBox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ListBox1.SelectedIndexChanged
 
     End Sub
+    Friend WithEvents Button_SetToGrid As Button
+    Friend WithEvents TextBox_Scene As TextBox
     Friend WithEvents OpenFileDialog1 As OpenFileDialog
+    Friend WithEvents Label3 As Label
+    Friend WithEvents Label1 As Label
     Friend WithEvents PublishToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents HTMLToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents Epub作成ToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents GroupBox_Tab As GroupBox
-    Friend WithEvents TabControl1 As TabControl
-    Friend WithEvents TabPage1 As TabPage
-    Friend WithEvents TextBox_Scene As TextBox
-    Friend WithEvents Button_SetToGrid As Button
-    Friend WithEvents Label2 As Label
-    Friend WithEvents ListBox1 As ListBox
-    Friend WithEvents TextBox_MainEditer As TextBox
-    Friend WithEvents Lbl_EditFileName As Label
-    Friend WithEvents GroupBox1 As GroupBox
-    Friend WithEvents Label3 As Label
-    Friend WithEvents Label1 As Label
-    Friend WithEvents TabPage2 As TabPage
-    Friend WithEvents DataGridView1 As DataGridView
+    Friend WithEvents Label_ver As Label
     Friend WithEvents Column1 As DataGridViewTextBoxColumn
     Friend WithEvents Column2 As DataGridViewTextBoxColumn
     Friend WithEvents Column3 As DataGridViewTextBoxColumn

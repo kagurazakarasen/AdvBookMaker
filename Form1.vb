@@ -37,7 +37,6 @@ Public Class form1
 
     Private Sub FormInit()
 
-        Me.Text = "AdventureGameBook Maker / Version:" + My.Application.Info.Version.ToString
 
 
         '選択肢フォーム自動生成
@@ -260,11 +259,11 @@ Public Class form1
 
 
     End Sub
-    Private Sub ListBox1_MouseDoubleClick(sender As Object, e As MouseEventArgs)
+    Private Sub ListBox1_MouseDoubleClick(sender As Object, e As MouseEventArgs) Handles ListBox1.MouseDoubleClick
         ListToEditor()
     End Sub
 
-    Private Sub ListBox1_PreviewKeyDown(sender As Object, e As PreviewKeyDownEventArgs)
+    Private Sub ListBox1_PreviewKeyDown(sender As Object, e As PreviewKeyDownEventArgs) Handles ListBox1.PreviewKeyDown
         If (e.KeyCode = Keys.Enter) Then
             ListToEditor()
 
@@ -378,7 +377,7 @@ Public Class form1
         Console.WriteLine(ver)
 
         Console.WriteLine(My.Application.Info.Version)
-        'Label_ver.Text = "Version:" + My.Application.Info.Version.ToString
+        Label_ver.Text = "Version:" + My.Application.Info.Version.ToString
 
 
         ' カレントディレクトリを取得する
@@ -439,7 +438,7 @@ Public Class form1
 
     End Sub
 
-    Private Sub Button_SetToGrid_Click(sender As Object, e As EventArgs)
+    Private Sub Button_SetToGrid_Click(sender As Object, e As EventArgs) Handles Button_SetToGrid.Click
         SetToGrid()
 
     End Sub
@@ -735,7 +734,7 @@ Public Class form1
 
     End Sub
 
-    Private Sub TextBox_Scene_TextChanged(sender As Object, e As EventArgs)
+    Private Sub TextBox_Scene_TextChanged(sender As Object, e As EventArgs) Handles TextBox_Scene.TextChanged
         If (Me.Text <> "") Then
             TextBox_MainEditer.Enabled = True
         End If
@@ -1110,11 +1109,7 @@ Public Class form1
 
     End Sub
 
-    Private Sub TextBox_Scene_TextChanged_1(sender As Object, e As EventArgs) Handles TextBox_Scene.TextChanged
-        If (Me.Text <> "") Then
-            TextBox_MainEditer.Enabled = True
-        End If
-    End Sub
+
 End Class
 
 'memo アイコン使用イラストーいらすとや：http://www.irasutoya.com/2016/05/blog-post_74.html
