@@ -367,6 +367,29 @@ Public Class form1
     End Sub
 
     Private Sub form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+        'コマンドライン引数を確認する
+        Dim inputArgument As String = "/input="
+        Dim inputName As String = ""
+
+        For Each s As String In My.Application.CommandLineArgs
+            If s.ToLower.StartsWith(inputArgument) Then
+                inputName = s.Remove(0, inputArgument.Length)
+            End If
+        Next
+
+        If inputName = "" Then
+            Console.WriteLine("No input Args. QuestionMAX=4(default)")
+        Else
+            Console.WriteLine("Input Args: " & inputName)
+            If (Val(inputName) > 0) Then
+                Console.WriteLine("Q-MAX= " & inputName)
+                QMAX = Val(inputName)
+            End If
+
+        End If
+
+        'フォームイニシャライズ
         FormInit()
 
         '自分自身のバージョン情報を取得する

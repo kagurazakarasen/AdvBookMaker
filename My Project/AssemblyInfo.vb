@@ -9,11 +9,11 @@ Imports System.Runtime.InteropServices
 ' アセンブリ属性の値を確認します
 
 <Assembly: AssemblyTitle("AdvBookMaker")>
-<Assembly: AssemblyDescription("アドベンチャーゲーム・ブックを作成する")>
+<Assembly: AssemblyDescription("アドベンチャーゲーム・ブックを作成するヨ")>
 <Assembly: AssemblyCompany("RasenWorks")>
 <Assembly: AssemblyProduct("AdvBookMaker")>
 <Assembly: AssemblyCopyright("Copyright ©  2017")>
-<Assembly: AssemblyTrademark("")>
+<Assembly: AssemblyTrademark("RasenWorks")>
 
 <Assembly: ComVisible(False)>
 
@@ -31,5 +31,5 @@ Imports System.Runtime.InteropServices
 ' 既定値にすることができます:
 ' <Assembly: AssemblyVersion("1.0.*")> 
 
-<Assembly: AssemblyVersion("0.0.0.1")>
-<Assembly: AssemblyFileVersion("0.0.0.1")>
+<Assembly: AssemblyVersion("0.0.4.1")>
+<Assembly: AssemblyFileVersion("0.0.4.1")>
